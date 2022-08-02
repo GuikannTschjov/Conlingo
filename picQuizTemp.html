@@ -1,0 +1,80 @@
+<link href="./style.css" rel="stylesheet" type="text/css"/>
+<style>
+#picQuiz{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: center;
+	}
+.picCard {
+	width:120px; height:120px; 
+	padding: 12px;
+	margin: 12px;
+	text-align: center;
+	}
+.picCard:hover {
+	background-color: #ddf4ff;
+	border: solid #84d8ff 2px;
+      box-shadow: 0 4px #84d8ff;
+	color: #1899d6;
+	}
+.picCard:active {box-shadow: 0 -0px;}
+.picCard:focus {
+	background-color: #ddf4ff;
+	border: solid #84d8ff 2px;
+      box-shadow: 0 0px #84d8ff;
+	color: #1899d6;
+	transform: translateY(4px);
+	}
+img {
+	height:80px
+	} 
+</style>
+
+
+Which one means "mother"?
+<div id="picQuiz">
+	<button class="picCard" id="card1" onclick="card=1;c()" onblur="d()">
+  	    <img id="cardPic1" src="/cardImg/father.png"/>
+ 	    <div id="cardTxt1">Yṡʌż</div>
+	</button>
+	<button class="picCard" id="card2" onclick="card=2;c()" onblur="d()">
+	    <img id="cardPic2" src="https://d2pur3iezf4d1j.cloudfront.net/images/663d3893596e4841ad991ef1dc02ddbc"/>
+	    <div id="cardTxt2" onclick="right()">⅄ṡʎż</div>
+	</button>
+	<button class="picCard" id="card3" onclick="card=3;c()" onblur="d()">
+	    <img id="cardPic3" src="/cardImg/cat.png"/>
+	    <div id="cardTxt3">ᑫżʌżu</div>
+	</button>
+	<button class="picCard" id="card4" onclick="card=4;c()" onblur="d()">
+	    <img id="cardPic4" src="/cardImg/sliver.png"/>
+	    <div id="cardTxt4">Z̄ĸ</div>
+	</button>
+</div>
+
+<button id="check" onmousedown="check()" disabled>
+CHECK
+</button>
+
+<div id="wrong" style="
+	background-color: #ffdfe0;
+    color: #ea2b2b;
+	">
+	Whoops. That's not right.
+	<button id="retry" onclick="retry()">RETRY</button>	
+</div>
+<div id="right" style="
+	background-color: #d7ffb8;
+    color: #58a700;
+	">
+	Congratulations!
+	<button id="next">NEXT</button>	
+</div>
+
+<script type="text/javascript" src="publicjs.js"></script>
+<script>
+	var card
+	function check() {
+		if (card == 2)  {right()}
+		else {wrong()}
+		}
+</script>

@@ -1,0 +1,129 @@
+<link href="./style.css" rel="stylesheet" type="text/css"/>
+<style>
+#top, #bottom{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: center;
+	}
+.wordCard:hover {
+	background-color: #ddf4ff;
+	border: solid #84d8ff 2px;
+      box-shadow: 0 4px #84d8ff;
+	color: #1899d6;
+	}
+</style>
+
+
+Write this Patchélogue sentence in English:
+<div id="sentenceQuiz">
+	<div id="charSentence" style="align-items: center;display: flex;border-bottom: 2px solid #e5e5e5;">
+		<img id="charPic" style="height:169px;" src="https://d2pur3iezf4d1j.cloudfront.net/images/ad178aebb8dfd890ab602527440e685c"/>
+		<div style="z-index: 150;">
+			<div style="
+				background-color: #fff;
+    			border-left: 2px solid #e5e5e5;
+    			border-bottom: 2px solid #e5e5e5;
+    			border-radius: 2px;
+    			transform: translateY(32px) rotate(45deg);
+  				transform-origin: top left;
+    			height: 13px;
+    			width: 13px;
+				"></div><!--ENIGMATIC ENGINEERING, DO NOT TOUCH-->
+			<div style="
+				background-color: #fff;
+    			border: 2px solid #e5e5e5;
+    			border-radius: 15px;
+				padding: 6px 12px;
+				line-height: 39px;
+				">
+				<span id="sentence">Dṣ ı̣ɑ ɒṣq Λżĸiʎ;</span>
+			</div>
+		</div>
+	</div>
+	<div id="top" style="
+		min-height: 60px;
+		border-bottom: 2px solid #e5e5e5;
+    	width: 100%;
+		">
+	</div>
+	<div id="bottom">
+		<button class="wordCard" id="card1" onclick="move(1)">
+			you
+		</button>
+		<button class="wordCard" id="card2" onclick="move(2)">
+			and
+		</button>
+		<button class="wordCard" id="card3" onclick="move(3)">
+			your
+		</button>
+		<button class="wordCard" id="card4" onclick="move(4)">
+			bugs
+		</button>
+		<button class="wordCard" id="card5" onclick="move(5)">
+			father
+		</button>
+	</div>
+</div>
+
+<button id="check" onmousedown="check()" disabled>
+CHECK
+</button>
+
+<div id="wrong" style="
+	background-color: #ffdfe0;
+    color: #ea2b2b;
+	">
+	Whoops. That's not right.
+	<button id="retry" onclick="retry()">RETRY</button>	
+</div>
+<div id="right" style="
+	background-color: #d7ffb8;
+    color: #58a700;
+	">
+	Congratulations!
+	<button id="next">NEXT</button>	
+</div>
+
+<script type="text/javascript" src="publicjs.js"></script>
+<script type="text/javascript">
+	function move(num) {
+		var top = document.getElementById("top")
+		var card = document.getElementById("card" + num)
+		if (top.contains(card)) {
+			document.getElementById("bottom").appendChild(card);
+		}
+		else {
+			top.appendChild(card);
+		}
+		observe()
+	}
+	function observe() {
+		if(document.getElementById("top").childNodes[1] == undefined)
+		{d()}
+		else {c()}
+	}
+	function check() {
+		var i=1
+		var wrongs = 0
+		var top = document.getElementById("top")
+		while (document.getElementById("top").childNodes[i] !== undefined) {
+			if (top.childNodes[i].id !== "card"+i) {
+				wrongs = 1
+				break;
+			}
+			i++
+		}
+		if (i !== 4 + 1) {wrongs = 1}
+		if (wrongs == 0)  {right()}
+		else {wrong()}
+		}
+</script>
+
+	
+
+
+	
+	
+
+
+	
