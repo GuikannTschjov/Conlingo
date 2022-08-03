@@ -47,6 +47,14 @@ button:active, botton:active {
 	transition-duration: 0.1s;
 	height:20px
 	}
+#wrong {
+	background-color: #ffdfe0;
+    color: #ea2b2b;
+	}
+#right {
+	background-color: #d7ffb8;
+    color: #58a700;
+	}
 #next, #retry {
 	min-width: 150px;
 	width: 100%;
@@ -84,5 +92,7 @@ button:active, botton:active {
 	td {border: solid 1px #e5e5e5;}
 	th:first-child {border-radius: 16px 0 0 0;}
 	th:last-child {border-radius: 0 16px 0 0;}
+	tr:last-child td:first-child {border-radius: 16px 0 0 0;}
+	tr:last-child td:last-child {border-radius: 0 16px 0 0;}
 	tr:last-child td:first-child {border-radius: 0 0 0 16px;}
 	tr:last-child td:last-child {border-radius: 0 0 16px 0;}
