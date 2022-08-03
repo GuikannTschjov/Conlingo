@@ -1,21 +1,23 @@
 body {
 	padding:28.5px auto;
-	width: 90%;
+	max-width: 500px;
 	text-align: center;
+	margin: auto;
 	}
 button{
 	border: solid #e5e5e5 2px;
 	border-radius: 12px;
-      box-shadow: 0 4px #e5e5e5;
+    box-shadow: 0 4px #e5e5e5;
 	background-color: white;
 	color: black;
 	cursor: pointer;
 	transition-duration: 0.1s;
 	padding: 12px;
+	margin: 2px;
 	display: block;
 	}
 button:active, botton:active {
-      box-shadow: 0 -0px;
+    box-shadow: 0 -0px;
 	transform: translateY(4px);
 	}
 #check {
@@ -29,12 +31,12 @@ button:active, botton:active {
 	height: 50px;
 	}
 #check:active {
-      box-shadow: 0 -0px;
+    box-shadow: 0 -0px;
 	}
 #check:disabled {
 	background-color: #bbb;
 	border: solid grey 2px;
-      box-shadow: 0 4px grey;
+    box-shadow: 0 4px grey;
 	}
 #wrong, #right {
 	bottom: 0;

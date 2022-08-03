@@ -12,7 +12,7 @@
 	font-size:900%;
 	text-align: center;
 	background-color: #1cb0f6;
-	border: solid #1899d6; 2px;
+	border: solid #1899d6 2px;
 	box-shadow: 0 4px #1899d6;
 	color: #fff;
 	}
@@ -45,14 +45,13 @@ Which sound does this letter make?
  	    ż
 	</button>
 <div id="letterQuiz">
-	
-	<button class="soundCard" id="card1" onclick="card=1;c()" onblur="d()">
+	<button class="soundCard" id="card1" onclick="card=1">
 	    e
 	</button>
-	<button class="soundCard" id="card2" onclick="card=2;c()" onblur="d()">
+	<button class="soundCard" id="card2" onclick="card=2">
 	    a
 	</button>
-	<button class="soundCard" id="card3" onclick="card=3;c()" onblur="d()">
+	<button class="soundCard" id="card3" onclick="card=3">
 	    u
 	</button>
 </div>
@@ -73,13 +72,15 @@ CHECK
     color: #58a700;
 	">
 	Congratulations!
-	<button id="next">NEXT</button>	
+	<button id="next" onclick="retry()">NEXT</button>	
 </div>
 
 <script type="text/javascript" src="publicjs.js"></script>
 <script>
 	var a=document.getElementById("audio");
 	var card
+	document.getElementsByClassName("soundCard").onclick = c()
+	document.getElementsByClassName("soundCard").onblur = d()
 	function check() {
 		if (card == 2) {right()}
 		else {wrong()}
