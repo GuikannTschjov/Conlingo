@@ -45,13 +45,13 @@ Which sound does this letter make?
  	    ż
 	</button>
 <div id="letterQuiz">
-	<button class="soundCard" id="card1" onclick="card=1">
+	<button class="soundCard" id="card1" onclick="card=1;c()" onblur="d()">
 	    e
 	</button>
-	<button class="soundCard" id="card2" onclick="card=2">
+	<button class="soundCard" id="card2" onclick="card=2;c()" onblur="d()">
 	    a
 	</button>
-	<button class="soundCard" id="card3" onclick="card=3">
+	<button class="soundCard" id="card3" onclick="card=3;c()" onblur="d()">
 	    u
 	</button>
 </div>
@@ -79,8 +79,6 @@ CHECK
 <script>
 	var a=document.getElementById("audio");
 	var card
-	document.getElementsByClassName("soundCard").onclick = c()
-	document.getElementsByClassName("soundCard").onblur = d()
 	function check() {
 		if (card == 2) {right()}
 		else {wrong()}
