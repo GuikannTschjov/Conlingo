@@ -3,19 +3,10 @@
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
 </head>
 <body>
+    <link href="./style.css" rel="stylesheet" type="text/css"/>
     <style>
         button {
-            border: solid #e5e5e5 2px;
-            border-radius: 12px;
-              box-shadow: 0 4px #e5e5e5;
-            background-color: white;
-            color: black;
-            cursor: pointer;
-            transition-duration: 0.1s;
             width:120px; height:120px; 
-            padding: 12px;
-            margin: 12px;
-            text-align: center;
             }
         button:hover {
             background-color: #ddf4ff;
@@ -29,30 +20,48 @@
             margin: auto;
             } 
     </style>
+
 <h1>Conlingo - The world's best way to learn Patchélogue</h1>
+
 <p style="font-size:50%">(And notice me if I ever spell it "Conlinguo" again.)</p>
+
 <p>Conlingo is a rip-off version of the world-famous language-learning app, <a href="https://www.duolingo.com/learn">Duolingo</a>. It tends to teach the user my <a href="https://en.m.wiki.hancel.org/wiki/Constructed_language">conlang</a>, Patchélogue, in the Duolingo way.</p>
+
+<p>The whole project is under construction and there's only a demo of demos. Either I someday learn to generate pages with random quizzes with JS, of I make every single quiz an independent HTML page.</p>
+
 <h2>Templates:</h2>
 <div style="
     display:flex;
     flex-wrap:wrap;
     justify-content: center;
     ">
-    <button onclick="letterQuizTemp.html">
+    <button onclick="location.href='/letterQuizTemp.html'">
         <img src="https://www.emojiall.com/images/svg/twitter/1f520.svg"/>
         Letter Quiz
     </button> 
-    <button onclick="picQuizTemp.html">
+    <button onclick="location.href='/picQuizTemp.html'">
         <img src="https://www.emojiall.com/images/svg/twitter/1f5bc.svg"/>
         Picture Quiz
     </button> 
-    <button onclick="sentenceQuizTemp.html">
+    <button onclick="location.href='/sentenceQuizTemp.html'">
         <img src="https://www.emojiall.com/images/svg/twitter/1f4ac.svg"/>
         Sentence Quiz
     </button> 
-    <button onclick="wordCards.html">
+    <button onclick="location.href='/wordCards.html'">
         <img src="https://www.emojiall.com/images/svg/twitter/1f524.svg"/>
         Word Cards
+    </button>
+</div>
+
+<h2>Demo:</h2>
+<div style="
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    ">
+    <button onclick="location.href='/1/tips.html'">
+        <img src="https://www.emojiall.com/images/svg/twitter/1f520.svg"/>
+        Letters 1
     </button>
 </div>
 

@@ -1,4 +1,4 @@
-<link href="./style.css" rel="stylesheet" type="text/css"/>
+<link href="../style.css" rel="stylesheet" type="text/css"/>
 <style>
 #letterQuiz{
 	display:flex;
@@ -38,21 +38,21 @@
 	}
 </style>
 
-<audio id="audio" src="https://up.wiki.hancel.org/wikipedia/commons/5/50/Open_central_unrounded_vowel.ogg">
+<audio id="audio" src="https://up.wiki.hancel.org/wikipedia/commons/a/a9/Bilabial_nasal.ogg">
 </audio>
 Which sound does this letter make?
 <button id="letterCard" onclick="a.play()">
- 	    ż
+	ʎ
 	</button>
 <div id="letterQuiz">
 	<button class="soundCard" id="card1" onclick="card=1;c()" onblur="d()">
-	    e
+	    m
 	</button>
 	<button class="soundCard" id="card2" onclick="card=2;c()" onblur="d()">
-	    a
+	    n
 	</button>
 	<button class="soundCard" id="card3" onclick="card=3;c()" onblur="d()">
-	    u
+	    b
 	</button>
 </div>
 
@@ -72,7 +72,7 @@ CHECK
     color: #58a700;
 	">
 	Congratulations!
-	<button id="next" onclick="location.href='index.html'">NEXT</button>	
+	<button id="next" onclick="location.href='Quiz3.html'">NEXT</button>	
 </div>
 
 <script type="text/javascript" src="publicjs.js"></script>
@@ -80,7 +80,7 @@ CHECK
 	var a=document.getElementById("audio");
 	var card
 	function check() {
-		if (card == 2) {right()}
+		if (card == 1) {right()}
 		else {wrong()}
 		}
 </script>

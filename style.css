@@ -1,7 +1,5 @@
 body {
-	padding:28.5px auto;
 	max-width: 500px;
-	text-align: center;
 	margin: auto;
 	font-family: Arial, Helvetica, sans-serif;
 	}
@@ -16,6 +14,7 @@ button{
 	padding: 12px;
 	margin: 2px;
 	display: block;
+	text-align: center;
 	}
 button:active, botton:active {
     box-shadow: 0 -0px;
@@ -66,3 +65,24 @@ button:active, botton:active {
 	box-shadow: 0 4px #ea2b2b;
 	color: #fff;
 	}
+
+	table {
+		margin: 24px 0;
+		table-layout: fixed;
+		width: 100%;
+		background: #fff;
+		border-spacing: 0px;
+		border: solid 1px #e5e5e5;
+		border-radius: 16px
+		}
+	td, th {line-height: 22px;}
+	th {
+		background: #1caff6;
+		border: solid 2px #1caff6;
+		color: #fff;
+		}
+	td {border: solid 1px #e5e5e5;}
+	th:first-child {border-radius: 16px 0 0 0;}
+	th:last-child {border-radius: 0 16px 0 0;}
+	tr:last-child td:first-child {border-radius: 0 0 0 16px;}
+	tr:last-child td:last-child {border-radius: 0 0 16px 0;}
