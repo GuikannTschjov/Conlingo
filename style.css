@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,600;0,800;1,600;1,800&display=swap');
-* {font-family:Nunito, Arial, Helvetica, sans-serif}
+* {
+	font-family:Nunito, Arial, Helvetica, sans-serif;
+	color: #4b4b4b;
+	}
 body {
 	max-width: 500px;
 	margin: auto;
@@ -11,7 +14,7 @@ button{
 	border-radius: 12px;
     box-shadow: 0 4px #e5e5e5;
 	background-color: white;
-	color: black;
+	color: #4b4b4b;
 	cursor: pointer;
 	transition-duration: 0.1s;
 	padding: 12px;
@@ -37,9 +40,9 @@ button:active {
     box-shadow: 0 -0px;
 	}
 #check:disabled {
-	background-color: #bbb;
-	border: solid grey 2px;
-    box-shadow: 0 4px grey;
+	background-color: #afafaf;
+	border: solid #777 2px;
+    box-shadow: 0 4px #777;
 	}
 #wrong, #right {
 	bottom: 0;
@@ -77,6 +80,12 @@ button:active {
 	color: #fff;
 	}
 
+	a{margin:0px;text-decoration: none;}
+	a:link{color: #2b70c9;}
+	a:hover {color:#1cb0f6; background-color: rgb(229, 229, 229, 0.25);}
+	a:active {color:#ce82ff; background-color: rgb(229, 229, 229, 0.25)}
+	a:visited{color:#9069cd}
+
 	table {
 		margin: 24px 0;
 		table-layout: fixed;
@@ -88,8 +97,8 @@ button:active {
 		}
 	td, th {line-height: 22px;}
 	th {
-		background: #1caff6;
-		border: solid 2px #1caff6;
+		background: #1cb0f6;
+		border: solid 2px #1cb0f6;
 		color: #fff;
 		}
 	td {border: solid 1px #e5e5e5;}

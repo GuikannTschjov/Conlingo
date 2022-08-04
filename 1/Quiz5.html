@@ -25,33 +25,28 @@
 	color: #1899d6;
 	transform: translateY(4px);
 	}
-img {
-	height:80px
+.picCard {
+	font-size: 500%;
 	} 
 </style>
 
 
-Which one means "mother"?
+Select the letter(s) for "muma":
 <div id="picQuiz">
 	<button class="picCard" id="card1" onclick="card=1;c()" onblur="d()">
-  	    <img id="cardPic1" src="https://www.emojiall.com/images/svg/twitter/1f468-200d-1f37c.svg"/>
- 	    <div id="cardTxt1">Yṡʌż</div>
+		Yṡʌż
 	</button>
 	<button class="picCard" id="card2" onclick="card=2;c()" onblur="d()">
-	    <img id="cardPic2" src="https://www.emojiall.com/images/svg/twitter/1f469-200d-1f37c.svg"/>
-	    <div id="cardTxt2">⅄ṡʎż</div>
+	    ⅄iʎZ̄
 	</button>
 	<button class="picCard" id="card3" onclick="card=3;c()" onblur="d()">
-	    <img id="cardPic3" src="https://www.emojiall.com/images/svg/twitter/1f408.svg"/>
-	    <div id="cardTxt3">ᑫżʌżu</div>
+	    ⅄ṡʎż
 	</button>
 	<button class="picCard" id="card4" onclick="card=4;c()" onblur="d()">
-	    <img id="cardPic4" src="https://www.emojiall.com/images/svg/twitter/1f401.svg"/>
-	    <div id="cardTxt4">⅄iᴚi</div>
+		Yṡɑż
 	</button>
 	<button class="picCard" id="card5" onclick="card=5;c()" onblur="d()">
-	    <img id="cardPic5" src="https://www.emojiall.com/images/svg/twitter/1f455.svg"/>
-	    <div id="cardTxt5">Īyṡ</div>
+	    ⅄ṣʞż
 	</button>
 </div>
 
@@ -65,14 +60,14 @@ CHECK
 </div>
 <div id="right">
 	Well done!
-	<button id="next" onclick="alert('End of demo. As you can see, most of the quizzes are repetitive. If I don’t learn to auto-generate them by JS or semothing, my website would be tedious.');location.href='./tips.html'">NEXT</button>	
+	<button id="next" onclick="location.href='./Quiz6.html'">NEXT</button>	
 </div>
 
 <script type="text/javascript" src="../publicjs.js"></script>
 <script>
 	var card
 	function check() {
-		if (card == 2)  {right()}
+		if (card == 3)  {right()}
 		else {wrong()}
 		}
 </script>
