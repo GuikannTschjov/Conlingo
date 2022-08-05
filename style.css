@@ -80,11 +80,20 @@ button:active {
 	color: #fff;
 	}
 
-	a{margin:0px;text-decoration: none;}
+	a{
+		text-decoration: none;
+		border-bottom: dashed 2px #e5e5e5;
+		transition-duration: 0.1s;
+	}
 	a:link{color: #2b70c9;}
-	a:hover {color:#1cb0f6; background-color: rgb(229, 229, 229, 0.25);}
-	a:active {color:#ce82ff; background-color: rgb(229, 229, 229, 0.25)}
+	a:hover {border-color:#1cb0f6;}
+	a:active {border-color:#ce82ff;color:#9069cd}
 	a:visited{color:#9069cd}
+
+	u{
+		text-decoration:none;
+		border-bottom: dashed 2px #e5e5e5
+	}
 
 	table {
 		margin: 24px 0;
@@ -104,7 +113,7 @@ button:active {
 	td {border: solid 1px #e5e5e5;}
 	th:first-child {border-radius: 16px 0 0 0;}
 	th:last-child {border-radius: 0 16px 0 0;}
-	tr:last-child td:first-child {border-radius: 16px 0 0 0;}
-	tr:last-child td:last-child {border-radius: 0 16px 0 0;}
+	tr:first-child td:first-child {border-radius: 16px 0 0 0;}
+	tr:first-child td:last-child {border-radius: 0 16px 0 0;}
 	tr:last-child td:first-child {border-radius: 0 0 0 16px;}
 	tr:last-child td:last-child {border-radius: 0 0 16px 0;}
