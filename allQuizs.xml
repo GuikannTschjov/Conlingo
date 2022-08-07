@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<allQuiz>
+
+<quiz key="1-1">
+    <type>newLetter</type>
+    <letter>ż</letter>
+    <audio>https://up.wiki.hancel.org/wikipedia/commons/5/50/Open_central_unrounded_vowel.ogg</audio>
+    <right>a</right>
+    <wrong1>i</wrong1>
+    <wrong2>e</wrong2>
+</quiz>
+<quiz key="1-2">
+    <type>newLetter</type>
+    <letter>ʎ</letter>
+    <audio>https://up.wiki.hancel.org/wikipedia/commons/a/a9/Bilabial_nasal.ogg</audio>
+    <right>m</right>
+    <wrong1>n</wrong1>
+    <wrong2>b</wrong2>
+</quiz>
+<quiz key="1-3">
+    <type>selectText</type>
+    <toSelect>a</toSelect>
+    <right>ż</right>
+    <wrong1>ṡ</wrong1>
+    <wrong2>i</wrong2>
+    <wrong3>ṣ</wrong3>
+    <wrong4>z</wrong4>
+</quiz>
+<quiz key="1-4">
+    <type>newLetter</type>
+    <letter>ṡ</letter>
+    <audio>https://up.wiki.hancel.org/wikipedia/commons/5/5d/Close_back_rounded_vowel.ogg</audio>
+    <right>u</right>
+    <wrong1>o</wrong1>
+    <wrong2>a</wrong2>
+</quiz>
+<quiz key="1-5">
+    <type>selectText</type>
+    <toSelect>muma</toSelect>
+    <right>⅄ṡʎż</right>
+    <wrong1>Yṡʌż</wrong1>
+    <wrong2>⅄iʎZ̄</wrong2>
+    <wrong3>Yṡɑż</wrong3>
+    <wrong4>⅄ṣʞż</wrong4>
+    <fontSize>200%</fontSize>
+</quiz>
+<quiz key="1-6">
+    <type>selectPic</type>
+    <toSelect>mother</toSelect>
+    <right>⅄ṡʎż</right>
+    <rightPic>https://www.emojiall.com/images/svg/twitter/1f469-200d-1f37c.svg</rightPic>
+    <wrong1>Yṡʌż</wrong1>
+    <wrongPic1>https://www.emojiall.com/images/svg/twitter/1f468-200d-1f37c.svg</wrongPic1>
+    <wrong2>ᑫżʌżu</wrong2>
+    <wrongPic2>https://www.emojiall.com/images/svg/twitter/1f408.svg</wrongPic2>
+    <wrong3>⅄iᴚi</wrong3>
+    <wrongPic3>https://www.emojiall.com/images/svg/twitter/1f401.svg</wrongPic3>
+    <wrong4>Īyṡ</wrong4>
+    <wrongPic4>https://www.emojiall.com/images/svg/twitter/1f455.svg</wrongPic4>
+</quiz>
+
+<allQuiz>
