@@ -1,0 +1,87 @@
+<link href="./style.css" rel="stylesheet" type="text/css"/>
+<style>
+#left{
+	display:flex;
+	flex-direction: row;
+	flex-wrap:wrap;
+	justify-content: center;
+	}
+.matchCard {
+	width:120px; height:50px; 
+	padding: 12px;
+	margin: 12px;
+	text-align: center;
+	}
+.matchCard:hover {
+	background-color: #ddf4ff;
+	border: solid #84d8ff 2px;
+      box-shadow: 0 4px #84d8ff;
+	color: #1899d6;
+	}
+.matchCard:active {box-shadow: 0 -0px;}
+.matchCard:focus {
+	background-color: #ddf4ff;
+	border: solid #84d8ff 2px;
+      box-shadow: 0 0px #84d8ff;
+	color: #1899d6;
+	transform: translateY(4px);
+	}
+img {
+	height:80px
+	} 
+</style>
+
+
+Match the corresponding pair
+<div id="left">
+	<button class="matchCard" id="cardL1" onclick="cardL=1;c()" onblur="d()">
+  	    Yṡʌż
+	</button>
+	<button class="matchCard" id="cardL2" onclick="cardL=2;c()" onblur="d()">
+	    ⅄ṡʎż
+	</button>
+	<button class="matchCard" id="cardL3" onclick="cardL=3;c()" onblur="d()">
+	    ᑫżʌżu
+	</button>
+	<button class="matchCard" id="cardL4" onclick="cardL=4;c()" onblur="d()">
+	    ⅄iᴚi
+	</button>
+	<button class="matchCard" id="cardL5" onclick="cardL=5;c()" onblur="d()">
+	    Īyṡ
+	</button>
+</div>
+<div id="right">
+	<button class="matchCard" id="cardR1" onclick="cardR=1;c()" onblur="d()">
+  	    father
+	</button>
+	<button class="matchCard" id="cardR2" onclick="cardR=2;c()" onblur="d()">
+	    mother
+	</button>
+	<button class="matchCard" id="cardR3" onclick="cardR=3;c()" onblur="d()">
+	    cat
+	</button>
+	<button class="matchCard" id="cardR4" onclick="cardR=4;c()" onblur="d()">
+	    mouse
+	</button>
+	<button class="matchCard" id="cardR5" onclick="cardR=5;c()" onblur="d()">
+	    cloth
+	</button>
+</div>
+
+<div id="wrong">
+	Whoops. Let’s try again.
+	<button id="retry" onclick="retry()">RETRY</button>	
+</div>
+<div id="right">
+	Well done!
+	<button id="next" onclick="location.href='./index.html'">NEXT</button>	
+</div>
+
+<script type="text/javascript" src="publicjs.js"></script>
+<script>
+	var card
+	function check() {
+		if (card == 2)  {right()}
+		else {wrong()}
+		}
+</script>
