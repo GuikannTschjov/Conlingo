@@ -47,6 +47,7 @@
 <quiz key="1-6">
     <type>selectPic</type>
     <toSelect>mother</toSelect>
+    <!--
     <right>⅄ṡʎż</right>
     <rightPic>https://www.emojiall.com/images/svg/twitter/1f469-200d-1f37c.svg</rightPic>
     <wrong1>Yṡʌż</wrong1>
@@ -57,6 +58,74 @@
     <wrongPic3>https://www.emojiall.com/images/svg/twitter/1f401.svg</wrongPic3>
     <wrong4>Īyṡ</wrong4>
     <wrongPic4>https://www.emojiall.com/images/svg/twitter/1f455.svg</wrongPic4>
+    -->
+    <wrong1>father</wrong1>
+    <wrong2>cat</wrong2>
+    <wrong3>mouse</wrong3>
+    <wrong4>cloth</wrong4>
 </quiz>
+<quiz key="1-7">
+    <type>newLetter</type>
+    <letter>y</letter>
+    <audio>https://up.wiki.hancel.org/wikipedia/commons/c/c7/Voiceless_labio-dental_fricative.ogg</audio>
+    <right>f</right>
+    <wrong1>w</wrong1>
+    <wrong2>p</wrong2>
+</quiz>
+<quiz key="1-8">
+    <type>newLetter</type>
+    <letter>ʌ</letter>
+    <audio>https://up.wiki.hancel.org/wikipedia/commons/5/51/Voiceless_bilabial_plosive.ogg</audio>
+    <right>b</right>
+    <wrong1>d</wrong1>
+    <wrong2>g</wrong2>
+</quiz>
+<quiz key="1-9">
+    <type>selectText</type>
+    <toSelect>f</toSelect>
+    <right>y</right>
+    <wrong1>ʎ</wrong1>
+    <wrong2>v</wrong2>
+    <wrong3>ṡ</wrong3>
+    <wrong4>ʌ</wrong4>
+</quiz>
+<quiz key="1-10">
+    <type>selectPic</type>
+    <toSelect>father</toSelect>
+    <wrong1>mother</wrong1>
+    <wrong2>cat</wrong2>
+    <wrong3>mouse</wrong3>
+    <wrong4>cloth</wrong4>
+</quiz>
+<quiz key="1-11">
+    <type numRight="2" numWrong="3">sentence</type>
+	<right1>mother</right1>
+    <right2>father</right2>
+    <wrong1>and</wrong1>
+    <wrong2>your</wrong2>
+    <wrong3>hello</wrong3>
+</quiz>
+<quiz key="1-12">
+    <type>selectPic</type>
+    <toSelect>mothers</toSelect>
+    <wrong1>mother</wrong1>
+    <wrong2>mice</wrong2>
+    <wrong3>father</wrong3>
+    <wrong4>fathers</wrong4>
+</quiz>
+<quiz key="1-13">
+    <type>matchPair</type>
+    <left1>am</left1>
+    <left2>um</left2>
+    <left3>aba</left3>
+    <left4>bufa</left4>
+    <left5>ambu</left5>
+    <right1>żʎ</right1>
+    <right2>ṡʎ</right2>
+    <right3>żʌż</right3>
+    <right4>ʌṡyż</right4>
+    <right5>żʎʌṡ</right5>
+</quiz>
+
 
 <allQuiz>

@@ -1,0 +1,150 @@
+<link href="../style.css" rel="stylesheet" type="text/css" />
+<style>
+	.matchCard, .matchCardR {
+		width: 200px;
+		height: 50px;
+		padding: 12px;
+		margin: 12px;
+		text-align: left;
+	}
+	.matchCardR:disabled {
+		background-color: #e5e5e5;
+		border-color: #afafaf;
+		box-shadow: 0 4px #afafaf;
+	}
+    .cardNum {
+		display: inline-block;
+		min-width: 18px;
+		border: solid #e5e5e5 1px;
+		border-radius: 5px;
+		margin-right: 24px;
+		text-align: center;
+	}
+	.matchCard:hover {
+		background-color: #ddf4ff;
+		border: solid #84d8ff 2px;
+		box-shadow: 0 4px #84d8ff;
+		color: #1899d6;
+	}
+	.matchCard:active {
+		box-shadow: 0 -0px;
+	}
+	.matchCard:focus {
+		background-color: #ddf4ff;
+		border: solid #84d8ff 2px;
+		box-shadow: 0 0px #84d8ff;
+		color: #1899d6;
+		transform: translateY(4px);
+	}
+</style>
+
+
+Match the corresponding pair:
+<div style="display: flex; justify-content: space-between">
+<div>
+	<button class="matchCard" onclick="cardL=1;cr()" onblur="dr()">
+		<div class="cardNum">1</div>
+        <span>am</span>
+	</button>
+	<button class="matchCard" onclick="cardL=2;cr()" onblur="dr()">
+		<div class="cardNum">2</div>
+		<span>um</span>
+	</button>
+	<button class="matchCard" onclick="cardL=3;cr()" onblur="dr()">
+		<div class="cardNum">3</div>
+		<span>ama</span>
+	</button>
+	<button class="matchCard" onclick="cardL=4;cr()" onblur="dr()">
+		<div class="cardNum">4</div>
+		<span>bufa</span>
+	</button>
+	<button class="matchCard" onclick="cardL=5;cr()" onblur="dr()">
+		<div class="cardNum">5</div>
+		<span>ambu</span>
+	</button>
+</div>
+<div>
+	<button class="matchCardR" onmousedown="cardR(3)" disabled>
+		<div class="cardNum" id="cardR3Num">-</div>
+		<span>żʌż</span>
+	</button>
+	<button class="matchCardR" onmousedown="cardR(5)" disabled>
+		<div class="cardNum" id="cardR5Num">-</div>
+		<span>żʎʌṡ</span>
+	</button>
+	<button class="matchCardR"onmousedown="cardR(1)" disabled>
+		<div class="cardNum" id="cardR1Num">-</div>
+		<span>żʎ</span>
+	</button>
+	<button class="matchCardR" onmousedown="cardR(2)" disabled>
+		<div class="cardNum" id="cardR2Num">-</div>
+		<span>ṡʎ</span>
+	</button>
+	<button class="matchCardR" onmousedown="cardR(4)" disabled>
+		<div class="cardNum" id="cardR4Num">-</div>
+		<span>ʌṡyż</span>
+	</button>
+</div>
+</div>
+
+<button id="check" onmousedown="check()" disabled>
+	CHECK
+</button>
+
+<div id="wrong">
+	Whoops. Let’s try again.
+	<button id="retry" onclick="retry()">RETRY</button>
+</div>
+<div id="right">
+	Well done!
+	<button id="next" onclick="alert('End of demo. As you can see, most of the quizzes are repetitive. If I don’t learn to auto-generate them by XML or something, my website would be tedious.');location.href='./tips.html'">NEXT</button>
+</div>
+
+<script type="text/javascript" src="publicjs.js"></script>
+<script>
+	var cardL
+	function cr() { 
+	var x = document.getElementsByClassName("matchCardR");
+	var i;
+	for (i = 0; i < x.length; i++) {
+		x[i].disabled = false ;
+	}
+}
+	function dr() { 
+	var x = document.getElementsByClassName("matchCardR");
+	var i;
+	for (i = 0; i < x.length; i++) {
+		x[i].disabled = true ;
+	}
+}
+	function cardR(num) {
+		document.getElementById("cardR"+num+"Num").innerText = cardL
+		observe()
+	}
+	function observe() {
+		var empty=0
+		var i = 1
+		while (i <= 5) {
+			if (document.getElementById("cardR" + i + "Num").innerText == "-") {
+				empty = 1
+				break;
+			}
+			i++
+		}
+		if(empty == 1) {d()}
+		else {c()}
+	}
+    function check() {
+        var i = 1
+        var wrongs = 0
+        while (i<=5) {
+            if (document.getElementById("cardR" + i + "Num").innerText !== i + "") {
+                wrongs = 1
+                break;
+            }
+            i++
+        }
+        if (wrongs == 0) { right() }
+        else { wrong() }
+    }
+</script>
