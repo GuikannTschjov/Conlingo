@@ -1,87 +1,150 @@
-<link href="./style.css" rel="stylesheet" type="text/css"/>
+<link href="./style.css" rel="stylesheet" type="text/css" />
 <style>
-#left{
-	display:flex;
-	flex-direction: row;
-	flex-wrap:wrap;
-	justify-content: center;
+	.matchCard, .matchCardR {
+		width: 200px;
+		height: 50px;
+		padding: 12px;
+		margin: 12px;
+		text-align: left;
 	}
-.matchCard {
-	width:120px; height:50px; 
-	padding: 12px;
-	margin: 12px;
-	text-align: center;
+	.matchCardR:disabled {
+		background-color: #e5e5e5;
+		border-color: #afafaf;
+		box-shadow: 0 4px #afafaf;
 	}
-.matchCard:hover {
-	background-color: #ddf4ff;
-	border: solid #84d8ff 2px;
-      box-shadow: 0 4px #84d8ff;
-	color: #1899d6;
+    .cardNum {
+		display: inline-block;
+		min-width: 18px;
+		border: solid #e5e5e5 1px;
+		border-radius: 5px;
+		margin-right: 24px;
+		text-align: center;
 	}
-.matchCard:active {box-shadow: 0 -0px;}
-.matchCard:focus {
-	background-color: #ddf4ff;
-	border: solid #84d8ff 2px;
-      box-shadow: 0 0px #84d8ff;
-	color: #1899d6;
-	transform: translateY(4px);
+	.matchCard:hover {
+		background-color: #ddf4ff;
+		border: solid #84d8ff 2px;
+		box-shadow: 0 4px #84d8ff;
+		color: #1899d6;
 	}
-img {
-	height:80px
-	} 
+	.matchCard:active {
+		box-shadow: 0 -0px;
+	}
+	.matchCard:focus {
+		background-color: #ddf4ff;
+		border: solid #84d8ff 2px;
+		box-shadow: 0 0px #84d8ff;
+		color: #1899d6;
+		transform: translateY(4px);
+	}
 </style>
 
 
-Match the corresponding pair
-<div id="left">
-	<button class="matchCard" id="cardL1" onclick="cardL=1;c()" onblur="d()">
-  	    Yṡʌż
+Match the corresponding pair:
+<div style="display: flex; justify-content: space-between">
+<div>
+	<button class="matchCard" onclick="cardL=1;cr()" onblur="dr()">
+		<div class="cardNum">1</div>
+        <span id="cardL1Txt">Yṡʌż</span>
 	</button>
-	<button class="matchCard" id="cardL2" onclick="cardL=2;c()" onblur="d()">
-	    ⅄ṡʎż
+	<button class="matchCard" onclick="cardL=2;cr()" onblur="dr()">
+		<div class="cardNum">2</div>
+		<span id="cardL2Txt">⅄ṡʎż</span>
 	</button>
-	<button class="matchCard" id="cardL3" onclick="cardL=3;c()" onblur="d()">
-	    ᑫżʌżu
+	<button class="matchCard" onclick="cardL=3;cr()" onblur="dr()">
+		<div class="cardNum">3</div>
+		<span id="cardL3Txt">ᑫżʌżu</span>
 	</button>
-	<button class="matchCard" id="cardL4" onclick="cardL=4;c()" onblur="d()">
-	    ⅄iᴚi
+	<button class="matchCard" onclick="cardL=4;cr()" onblur="dr()">
+		<div class="cardNum">4</div>
+		<span id="cardL4Txt">⅄iᴚi</span>
 	</button>
-	<button class="matchCard" id="cardL5" onclick="cardL=5;c()" onblur="d()">
-	    Īyṡ
-	</button>
-</div>
-<div id="right">
-	<button class="matchCard" id="cardR1" onclick="cardR=1;c()" onblur="d()">
-  	    father
-	</button>
-	<button class="matchCard" id="cardR2" onclick="cardR=2;c()" onblur="d()">
-	    mother
-	</button>
-	<button class="matchCard" id="cardR3" onclick="cardR=3;c()" onblur="d()">
-	    cat
-	</button>
-	<button class="matchCard" id="cardR4" onclick="cardR=4;c()" onblur="d()">
-	    mouse
-	</button>
-	<button class="matchCard" id="cardR5" onclick="cardR=5;c()" onblur="d()">
-	    cloth
+	<button class="matchCard" onclick="cardL=5;cr()" onblur="dr()">
+		<div class="cardNum">5</div>
+		<span id="cardL5Txt">Īyṡ</span>
 	</button>
 </div>
+<div>
+	<button class="matchCardR"onmousedown="cardR(1)" disabled>
+		<div class="cardNum" id="cardR1Num">-</div>
+		<span id="cardR1Txt">father</span>
+	</button>
+	<button class="matchCardR" onmousedown="cardR(2)" disabled>
+		<div class="cardNum" id="cardR2Num">-</div>
+		<span id="cardR2Txt">mother</span>
+	</button>
+	<button class="matchCardR" onmousedown="cardR(3)" disabled>
+		<div class="cardNum" id="cardR3Num">-</div>
+		<span id="cardR3Txt">cat</span>
+	</button>
+	<button class="matchCardR" onmousedown="cardR(4)" disabled>
+		<div class="cardNum" id="cardR4Num">-</div>
+		<span id="cardR4Txt">mouse</span>
+	</button>
+	<button class="matchCardR" onmousedown="cardR(5)" disabled>
+		<div class="cardNum" id="cardR5Num">-</div>
+		<span id="cardR5Txt">cloth</span>
+	</button>
+</div>
+</div>
+
+<button id="check" onmousedown="check()" disabled>
+	CHECK
+</button>
 
 <div id="wrong">
 	Whoops. Let’s try again.
-	<button id="retry" onclick="retry()">RETRY</button>	
+	<button id="retry" onclick="retry()">RETRY</button>
 </div>
 <div id="right">
 	Well done!
-	<button id="next" onclick="location.href='./index.html'">NEXT</button>	
+	<button id="next" onclick="location.href='./index.html'">NEXT</button>
 </div>
 
 <script type="text/javascript" src="publicjs.js"></script>
 <script>
-	var card
-	function check() {
-		if (card == 2)  {right()}
-		else {wrong()}
+	var cardL
+	function cr() { 
+	var x = document.getElementsByClassName("matchCardR");
+	var i;
+	for (i = 0; i < x.length; i++) {
+		x[i].disabled = false ;
+	}
+}
+	function dr() { 
+	var x = document.getElementsByClassName("matchCardR");
+	var i;
+	for (i = 0; i < x.length; i++) {
+		x[i].disabled = true ;
+	}
+}
+	function cardR(num) {
+		document.getElementById("cardR"+num+"Num").innerText = cardL
+		observe()
+	}
+	function observe() {
+		var empty=0
+		var i = 1
+		while (i <= 5) {
+			if (document.getElementById("cardR" + i + "Num").innerText == "-") {
+				empty = 1
+				break;
+			}
+			i++
 		}
+		if(empty == 1) {d()}
+		else {c()}
+	}
+    function check() {
+        var i = 1
+        var wrongs = 0
+        while (i<=5) {
+            if (document.getElementById("cardR" + i + "Num").innerText !== i + "") {
+                wrongs = 1
+                break;
+            }
+            i++
+        }
+        if (wrongs == 0) { right() }
+        else { wrong() }
+    }
 </script>

@@ -107,15 +107,17 @@ button:active {
 		background: #fff;
 		border-spacing: 0px;
 		border: solid 1px #e5e5e5;
-		border-radius: 16px
+		border-radius: 16px;
+		table-layout:fixed;
 		}
 	td, th {line-height: 22px;}
 	th {
 		background: #1cb0f6;
 		border: solid 2px #1cb0f6;
 		color: #fff;
+		white-space: nowrap
 		}
-	td {border: solid 1px #e5e5e5;}
+	td {border: solid 1px #e5e5e5}
 	tr:first-child *:first-child {border-radius: 16px 0 0 0;}
 	tr:first-child *:last-child {border-radius: 0 16px 0 0;}
 	tr:last-child *:first-child {border-radius: 0 0 0 16px;}

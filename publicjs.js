@@ -1,6 +1,3 @@
-//检测手机用户
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {body.style = "width:500px";}
-
 function c(){document.getElementById("check").disabled=false}
 function d(){document.getElementById("check").disabled=true;}
 function retry() {
