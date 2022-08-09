@@ -47,18 +47,6 @@
 <quiz key="1-6">
     <type>selectPic</type>
     <toSelect>mother</toSelect>
-    <!--
-    <right>⅄ṡʎż</right>
-    <rightPic>https://www.emojiall.com/images/svg/twitter/1f469-200d-1f37c.svg</rightPic>
-    <wrong1>Yṡʌż</wrong1>
-    <wrongPic1>https://www.emojiall.com/images/svg/twitter/1f468-200d-1f37c.svg</wrongPic1>
-    <wrong2>ᑫżʌżu</wrong2>
-    <wrongPic2>https://www.emojiall.com/images/svg/twitter/1f408.svg</wrongPic2>
-    <wrong3>⅄iᴚi</wrong3>
-    <wrongPic3>https://www.emojiall.com/images/svg/twitter/1f401.svg</wrongPic3>
-    <wrong4>Īyṡ</wrong4>
-    <wrongPic4>https://www.emojiall.com/images/svg/twitter/1f455.svg</wrongPic4>
-    -->
     <wrong1>father</wrong1>
     <wrong2>cat</wrong2>
     <wrong3>mouse</wrong3>
@@ -127,5 +115,48 @@
     <right5>żʎʌṡ</right5>
 </quiz>
 
+<quiz key="2-1">
+    <type>newLetter</type>
+    <letter>v</letter>
+    <audio>https://en.m.wiki.hancel.org/wiki/File:Voiceless_bilabial_affricate.ogg</audio>
+    <right>p</right>
+    <wrong1>f</wrong1>
+    <wrong2>b</wrong2>
+</quiz>
+<quiz key="2-2">
+    <type>newLetter</type>
+    <letter>i</letter>
+    <audio>https://up.wiki.hancel.org/wikipedia/commons/9/91/Close_front_unrounded_vowel.ogg</audio>
+    <right>i</right>
+    <wrong1>e</wrong1>
+    <wrong2>eo</wrong2>
+</quiz>
+<quiz key="2-3">
+    <type>selectPic</type>
+    <toSelect>textile</toSelect>
+    <wrong1>father</wrong1>
+    <wrong2>cat</wrong2>
+    <wrong3>mouse</wrong3>
+    <wrong4>cloth</wrong4>
+</quiz>
+<quiz key="2-4">
+    <type>selectPic</type>
+    <toSelect>cloth</toSelect>
+    <wrong1>father</wrong1>
+    <wrong2>cat</wrong2>
+    <wrong3>mouse</wrong3>
+    <wrong4>textile</wrong4>
+</quiz>
 
-<allQuiz>
+
+</allQuiz>
+	<!--for p, https://en.m.wiki.hancel.org/wiki/File:Voiceless_bilabial_affricate.ogg
+	for t, https://up.wiki.hancel.org/wikipedia/commons/d/dc/Voiceless_dental_stop.ogg
+	fot k, https://up.wiki.hancel.org/wikipedia/commons/e/e5/Voiceless_velar_affricate.ogg
+    
+    
+    https://up.wiki.hancel.org/wikipedia/commons/7/71/Open-mid_front_unrounded_vowel.ogg
+    https://up.wiki.hancel.org/wikipedia/commons/d/d0/PR-open-mid_back_rounded_vowel.ogg
+    
+    
+    -->
