@@ -3,7 +3,7 @@
 
 <quiz key="1-1">
     <type>newLetter</type>
-    <letter>ż</letter>
+    <letter>Z̄ż</letter>
     <audio>https://up.wiki.hancel.org/wikipedia/commons/5/50/Open_central_unrounded_vowel.ogg</audio>
     <right>a</right>
     <wrong1>i</wrong1>
@@ -11,7 +11,7 @@
 </quiz>
 <quiz key="1-2">
     <type>newLetter</type>
-    <letter>ʎ</letter>
+    <letter>⅄ʎ</letter>
     <audio>https://up.wiki.hancel.org/wikipedia/commons/a/a9/Bilabial_nasal.ogg</audio>
     <right>m</right>
     <wrong1>n</wrong1>
@@ -28,7 +28,7 @@
 </quiz>
 <quiz key="1-4">
     <type>newLetter</type>
-    <letter>ṡ</letter>
+    <letter>S̄ṡ</letter>
     <audio>https://up.wiki.hancel.org/wikipedia/commons/5/5d/Close_back_rounded_vowel.ogg</audio>
     <right>u</right>
     <wrong1>o</wrong1>
@@ -54,7 +54,7 @@
 </quiz>
 <quiz key="1-7">
     <type>newLetter</type>
-    <letter>y</letter>
+    <letter>Yy</letter>
     <audio>https://up.wiki.hancel.org/wikipedia/commons/c/c7/Voiceless_labio-dental_fricative.ogg</audio>
     <right>f</right>
     <wrong1>w</wrong1>
@@ -62,7 +62,7 @@
 </quiz>
 <quiz key="1-8">
     <type>newLetter</type>
-    <letter>ʌ</letter>
+    <letter>Λʌ</letter>
     <audio>https://up.wiki.hancel.org/wikipedia/commons/5/51/Voiceless_bilabial_plosive.ogg</audio>
     <right>b</right>
     <wrong1>d</wrong1>
@@ -117,7 +117,7 @@
 
 <quiz key="2-1">
     <type>newLetter</type>
-    <letter>v</letter>
+    <letter>Vv</letter>
     <audio>https://en.m.wiki.hancel.org/wiki/File:Voiceless_bilabial_affricate.ogg</audio>
     <right>p</right>
     <wrong1>f</wrong1>
@@ -125,7 +125,7 @@
 </quiz>
 <quiz key="2-2">
     <type>newLetter</type>
-    <letter>i</letter>
+    <letter>Īi</letter>
     <audio>https://up.wiki.hancel.org/wikipedia/commons/9/91/Close_front_unrounded_vowel.ogg</audio>
     <right>i</right>
     <wrong1>e</wrong1>
