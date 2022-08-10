@@ -117,15 +117,15 @@
 
 <quiz key="2-1">
     <type>newLetter</type>
-    <letter>Vv</letter>
-    <audio>https://en.m.wiki.hancel.org/wiki/File:Voiceless_bilabial_affricate.ogg</audio>
+    <letter>V v</letter>
+    <audio>https://up.wiki.hancel.org/wikipedia/commons/4/4a/Voiceless_bilabial_affricate.ogg</audio>
     <right>p</right>
     <wrong1>f</wrong1>
     <wrong2>b</wrong2>
 </quiz>
 <quiz key="2-2">
     <type>newLetter</type>
-    <letter>Īi</letter>
+    <letter>Ī i</letter>
     <audio>https://up.wiki.hancel.org/wikipedia/commons/9/91/Close_front_unrounded_vowel.ogg</audio>
     <right>i</right>
     <wrong1>e</wrong1>
@@ -144,6 +144,22 @@
     <toSelect>cloth</toSelect>
     <wrong1>father</wrong1>
     <wrong2>cat</wrong2>
+    <wrong3>mouse</wrong3>
+    <wrong4>textile</wrong4>
+</quiz>
+<quiz key="2-5">
+    <type>newLetter</type>
+    <letter>ᑫ q</letter>
+    <audio>https://up.wiki.hancel.org/wikipedia/commons/a/ac/Voiceless_alveolar_sibilant.ogg</audio>
+    <right>s</right>
+    <wrong1>q</wrong1>
+    <wrong2>sh</wrong2>
+</quiz>
+<quiz key="2-6">
+    <type>selectPic</type>
+    <toSelect>water</toSelect>
+    <wrong1>dog</wrong1>
+    <wrong2>mothers</wrong2>
     <wrong3>mouse</wrong3>
     <wrong4>textile</wrong4>
 </quiz>
