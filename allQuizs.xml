@@ -163,6 +163,14 @@
     <wrong3>mouse</wrong3>
     <wrong4>textile</wrong4>
 </quiz>
+<quiz key="2-7">
+    <type>newLetter</type>
+    <letter>&lt;div style="transform:scaleX(-100%); color:#fff;">ĸ K&lt;/div></letter>
+    <audio>https://up.wiki.hancel.org/wikipedia/commons/e/e5/Voiceless_velar_affricate.ogg</audio>
+    <right>k</right>
+    <wrong1>h</wrong1>
+    <wrong2>p</wrong2>
+</quiz>
 
 
 </allQuiz>
