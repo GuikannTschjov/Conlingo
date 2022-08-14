@@ -12,9 +12,8 @@
 body {
 	max-width: 500px;
 	margin: auto;
-	padding: 25px;
 	}
-p {text-indent: 2em;}
+p {text-indent: 2em; margin:0 10px;}
 button{
 	border: solid #e5e5e5 2px;
 	border-radius: 12px;
