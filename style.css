@@ -3,16 +3,16 @@
 	font-family:Nunito, Arial, Helvetica, sans-serif;
 	color: #4b4b4b;
 	}
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
 	body {
 		max-width: none;
 		width: 100%;
 	}
 }
 body {
-	max-width: 476px;
+	max-width: 500px;
 	margin: auto;
-	padding: 24px;
+	padding: 25px;
 	}
 p {text-indent: 2em;}
 button{
