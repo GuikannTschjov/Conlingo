@@ -17,7 +17,7 @@
 Write this Patchélogue sentence in English:
 <div id="sentenceQuiz">
 	<div id="charSentence" style="align-items: center;display: flex;border-bottom: 2px solid #e5e5e5;">
-		<img id="charPic" style="height:169px;" src="https://www.emojiall.com/images/svg/twitter/1f468-1f3fd-200d-1f3a8.svg">
+		<img id="charPic" style="height:169px;" src="https://www.emojiall.com/images/svg/twitter/1f469-200d-1f3a4.svg">
 		<div style="z-index: 150;">
 			<div style="
 				background-color: #fff;
@@ -37,7 +37,7 @@ Write this Patchélogue sentence in English:
 				line-height: 39px;
 				font-size: 15px;
 				">
-				<span id="sentence">Z̄qż₉ Yṡʌż₉ ⅄ṡʎż,</span>
+				<span id="sentence">⅄ṡʎżʎ₉ Yṡʎ,</span>
 			</div>
 		</div>
 	</div>
@@ -50,20 +50,20 @@ Write this Patchélogue sentence in English:
 		">
 	</div>
 	<div id="bottom">
-		<button class="wordCard" id="card1" onclick="move(1)">
-			son
-		</button>
 		<button class="wordCard" id="card3" onclick="move(3)">
-			mother
+			or
 		</button>
-		<button class="wordCard" id="card4" onclick="move(4)">
-			and
+		<button class="wordCard" id="card1" onclick="move(1)">
+			mothers
 		</button>
 		<button class="wordCard" id="card2" onclick="move(2)">
-			father
+			smoke
+		</button>
+		<button class="wordCard" id="card4" onclick="move(4)">
+			smoking
 		</button>
 		<button class="wordCard" id="card5" onclick="move(5)">
-			of
+			father
 		</button>
 	</div>
 </div>
@@ -78,7 +78,7 @@ CHECK
 </div>
 <div id="right">
 	Well done!
-	<button id="next" onclick="location.href='./Quiz10.html'">NEXT</button>	
+	<button id="next" onclick="alert('Course clear!');location.href='./tips.html'">NEXT</button>	
 </div>
 
 <script type="text/javascript" src="../publicjs.js"></script>
@@ -110,7 +110,7 @@ CHECK
 			}
 			i++
 		}
-		if (i !== 3 + 1) {wrongs = 1}
+		if (i !== 2 + 1) {wrongs = 1}
 		if (wrongs == 0)  {right()}
 		else {wrong()}
 		}
