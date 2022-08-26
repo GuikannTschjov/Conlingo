@@ -1,0 +1,87 @@
+<meta name="viewport" content="width=device-width, initial-scale=1"><link href="../style.css" rel="stylesheet" type="text/css"/>
+<style>
+#blankQuiz{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: center;
+	}
+.wordCard {
+	width:60px;
+	margin: 12px;
+	text-align: center;
+	}
+.wordCard:hover {
+	background-color: #ddf4ff;
+	border: solid #84d8ff 2px;
+      box-shadow: 0 4px #84d8ff;
+	color: #1899d6;
+	}
+.wordCard:active {box-shadow: 0 0;}
+.wordCard:focus {
+	background-color: #ddf4ff;
+	border: solid #84d8ff 2px;
+      box-shadow: 0 0px #84d8ff;
+	color: #1899d6;
+	transform: translateY(4px);
+	}
+</style>
+
+Fill the blank in the sentence:
+<div id="charSentence" style="align-items: center;display: flex;border-bottom: 2px solid #e5e5e5;">
+	<img id="charPic" style="height:169px;" src="https://www.emojiall.com/images/svg/twitter/1f469-1f3fb-200d-1f3a4.svg"/>
+	<div style="z-index: 150;">
+		<div style="
+			background-color: #fff;
+			border-left: 2px solid #e5e5e5;
+			border-bottom: 2px solid #e5e5e5;
+			border-radius: 2px;
+			transform: translateY(32px) rotate(45deg);
+			  transform-origin: top left;
+			height: 13px;
+			width: 13px;
+			"></div><!--ENIGMATIC ENGINEERING, DO NOT TOUCH-->
+		<div style="
+			background-color: #fff;
+			border: 2px solid #e5e5e5;
+			border-radius: 15px;
+			padding: 6px 12px;
+			line-height: 39px;
+			font-size: 15px;
+			">
+			<span id="sentence">____ Z̄qż;</span>
+		</div>
+	</div>
+</div>
+<div id="blankQuiz">
+	<button class="wordCard" id="card1" onclick="card=1;c()" onblur="d()">
+	    żu
+	</button>
+	<button class="wordCard" id="card2" onclick="card=2;c()" onblur="d()">
+	    nż
+	</button>
+	<button class="wordCard" id="card3" onclick="card=3;c()" onblur="d()">
+	    żn
+	</button>
+</div>
+
+<button id="check" onmousedown="check()" disabled>
+CHECK
+</button>
+
+<div id="wrong">
+	Whoops. Let’s try again.
+	<button id="retry" onclick="retry()">RETRY</button>	
+</div>
+<div id="right">
+	Well done!
+	<button id="next" onclick="alert('Course clear!');location.href='../3/tips.html'">NEXT</button>	
+</div>
+
+<script type="text/javascript" src="../publicjs.js"></script>
+<script>
+	var card
+	function check() {
+		if (card == 1) {right()}
+		else {wrong()}
+		}
+</script>
