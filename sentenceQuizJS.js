@@ -42,4 +42,4 @@ function check() {
 
     var randomBgIndex = Math.round( Math.random() * 6 );
 
-    document.getElementById("charpic").src="pic[randomBgIndex]"
+    document.getElementById("charPic").src="pic[randomBgIndex]"
