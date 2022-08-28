@@ -40,6 +40,5 @@ function check() {
     pic[5] = "https://www.emojiall.com/images/svg/twitter/1f468-1f3fd-200d-1f3a8.svg";
     pic[6] = "https://www.emojiall.com/images/svg/twitter/1f469-1f3ff-200d-1f9b1.svg";
 
-    var randomBgIndex = Math.round( Math.random() * 6 );
 
-    document.getElementById("charPic").src="pic[randomBgIndex]"
+    document.getElementById("charPic").src=pic[Math.round(Math.random()*6)]
