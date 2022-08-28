@@ -1,63 +1,74 @@
-<meta name="viewport" content="width=device-width, initial-scale=1"><link href="../style.css" rel="stylesheet" type="text/css"/>
+<title>Conlingo - The world's best way to learn Patchélogue</title><meta name="viewport" content="width=device-width, initial-scale=1"><link href="../style.css" rel="stylesheet" type="text/css"/>
 <style>
-#picQuiz{
+#top, #bottom{
 	display:flex;
 	flex-wrap:wrap;
 	justify-content: center;
 	}
-.picCard {
-	width:120px; height:120px; 
-	padding: 12px;
-	margin: 12px;
-	text-align: center;
-	}
-.picCard:hover {
+.wordCard:hover {
 	background-color: #ddf4ff;
 	border: solid #84d8ff 2px;
       box-shadow: 0 4px #84d8ff;
 	color: #1899d6;
 	}
-.picCard:active {box-shadow: 0 -0px;}
-.picCard:focus {
-	background-color: #ddf4ff;
-	border: solid #84d8ff 2px;
-      box-shadow: 0 0px #84d8ff;
-	color: #1899d6;
-	transform: translateY(4px);
-	}
-img {
-	height:80px
-	} 
 </style>
 
 
-Which one means "clothes"?
-<div id="picQuiz">
-	<button class="picCard" onclick="card=1;c()" onblur="d()">
-	    <img style="height:70px; margin-left:-20px; margin-right:-20px; transform: translate(0,-5px)" src="https://www.emojiall.com/images/svg/twitter/1f401.svg">
-		<img style="height:70px; margin-left:-20px; margin-right:-20px; transform: translate(0,5px)" src="https://www.emojiall.com/images/svg/twitter/1f401.svg">
-	    <div>⅄iᴚiʎ</div>
-	</button>
-	<button class="picCard" onclick="card=2;c()" onblur="d()">
-	    <img style="height:70px; margin-left:-20px; margin-right:-20px; transform: translate(0,-5px)" src="https://www.emojiall.com/images/svg/twitter/1f455.svg">
-		<img style="height:70px; margin-left:-20px; margin-right:-20px; transform: translate(0,5px)" src="https://www.emojiall.com/images/svg/twitter/1f455.svg">
-	    <div>Īyṡq</div>
-	</button>
-	<button class="picCard" onclick="card=3;c()" onblur="d()">
-	    <img style="height:70px; margin-left:-20px; margin-right:-20px; transform: translate(0,-5px)" src="https://www.emojiall.com/images/svg/twitter/1f469-200d-1f37c.svg">
-		<img style="height:70px; margin-left:-20px; margin-right:-20px; transform: translate(0,5px)" src="https://www.emojiall.com/images/svg/twitter/1f469-200d-1f37c.svg">
-	    <div>⅄ṡʎżʎ</div>
-	</button>
-	<button class="picCard" onclick="card=4;c()" onblur="d()">
-		<img style="height:70px; margin-left:-20px; margin-right:-20px; transform: translate(0,-5px)" src="https://www.emojiall.com/images/svg/twitter/1f3e0.svg">
-		<img style="height:70px; margin-left:-20px; margin-right:-20px; transform: translate(0,5px)" src="https://www.emojiall.com/images/svg/twitter/1f3e0.svg">
-	    <div>ᖷżqiq</div>
-	</button>
-	<button class="picCard" onclick="card=5;c()" onblur="d()">
-	    <img style="height:70px; margin-left:-20px; margin-right:-20px; transform: translate(0,-5px)" src="https://www.emojiall.com/images/svg/twitter/1f468-200d-1f37c.svg">
-		<img style="height:70px; margin-left:-20px; margin-right:-20px; transform: translate(0,5px)" src="https://www.emojiall.com/images/svg/twitter/1f468-200d-1f37c.svg">
-	    <div>Yṡʌżʎ</div>
-	</button>
+Write this Patchélogue sentence in English:
+<div id="sentenceQuiz">
+	<div id="charSentence" style="align-items: center;display: flex;border-bottom: 2px solid #e5e5e5;">
+		<img id="charPic" style="height:140px;padding:29px 17px 0 12px;" src="https://www.emojiall.com/images/svg/twitter/1f476-1f3fb.svg">
+		<div style="z-index: 150;">
+			<div style="
+				background-color: #fff;
+    			border-left: 2px solid #e5e5e5;
+    			border-bottom: 2px solid #e5e5e5;
+    			border-radius: 2px;
+    			transform: translateY(32px) rotate(45deg);
+  				transform-origin: top left;
+    			height: 13px;
+    			width: 13px;
+				"></div><!--ENIGMATIC ENGINEERING, DO NOT TOUCH-->
+			<div style="
+				background-color: #fff;
+    			border: 2px solid #e5e5e5;
+    			border-radius: 15px;
+				padding: 6px 12px;
+				line-height: 39px;
+				font-size: 15px;
+				">
+				<span id="sentence">ɑżɒṣ Λṡvż ı̣ɑ Īyṡq;</span>
+			</div>
+		</div>
+	</div>
+	<div id="top" style="
+		min-height: 60px;
+		border-bottom: 2px solid #e5e5e5;
+    	width: 100%;
+		align-items:flex-end;
+		padding-bottom:4px;
+		">
+	</div>
+	<div id="bottom">
+		<button class="wordCard" id="card4" onclick="move(4)">
+			clothes
+		</button>
+		<button class="wordCard" id="card1" onclick="move(1)">
+			many
+		</button>
+		<button class="wordCard" id="card6" onclick="move(6)">
+			insect
+		</button>
+		<button class="wordCard" id="card5" onclick="move(5)">
+			you
+		</button>
+		<button class="wordCard" id="card3" onclick="move(3)">
+			and
+		</button>
+		<button class="wordCard" id="card2" onclick="move(2)">
+			textile
+		</button>
+	</div>
 </div>
 
 <button id="check" onmousedown="check()" disabled>
@@ -74,10 +85,45 @@ CHECK
 </div>
 
 <script type="text/javascript" src="../publicjs.js"></script>
-<script>
-	var card
+<script type="text/javascript">
+	function move(num) {
+		var top = document.getElementById("top")
+		var card = document.getElementById("card" + num)
+		if (top.contains(card)) {
+			document.getElementById("bottom").appendChild(card);
+		}
+		else {
+			top.appendChild(card);
+		}
+		observe()
+	}
+	function observe() {
+		if(document.getElementById("top").childNodes[1] == undefined)
+		{d()}
+		else {c()}
+	}
 	function check() {
-		if (card == 2)  {right()}
+		var i=1
+		var wrongs = 0
+		var top = document.getElementById("top")
+		while (document.getElementById("top").childNodes[i] !== undefined) {
+			if (top.childNodes[i].id !== "card"+i) {
+				wrongs = 1
+				break;
+			}
+			i++
+		}
+		if (i !== 4 + 1) {wrongs = 1}
+		if (wrongs == 0)  {right()}
 		else {wrong()}
 		}
 </script>
+
+	
+
+
+	
+	
+
+
+	
