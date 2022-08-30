@@ -23,8 +23,7 @@ var allWords = [
 			for (i = 1; i <= 4; i++) {
 				temp = allWords[uniqueRand[i]]
 				if (temp.eng == answerWord) {i--; continue;}
-				document.getElementById("cardPic"+i).src = temp.url
-				document.getElementById("cardTxt"+i).innerHTML = temp.txt
+				document.getElementById("card"+i).innerHTML = '<img src="' + temp.url + '"/><div>' + temp.txt + '</div>'
 				}
 			}
 
