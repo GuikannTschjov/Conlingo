@@ -39,8 +39,12 @@ function check() {
     pic[4] = "https://www.emojiall.com/images/svg/twitter/1f9d1-1f3fc-200d-1f9b2.svg";
     pic[5] = "https://www.emojiall.com/images/svg/twitter/1f468-1f3fd-200d-1f3a8.svg";
     pic[6] = "https://www.emojiall.com/images/svg/twitter/1f469-1f3ff-200d-1f9b1.svg";
+    pic[7] = "https://www.emojiall.com/images/svg/twitter/1f476-1f3fb.svg";
+    pic[8] = "https://www.emojiall.com/images/svg/twitter/1f43b.svg";
 
-    document.getElementById("charPic").src=pic[Math.round(Math.random()*6)]
-
+    var rand = Math.round(Math.random()*8)
+    document.getElementById("charPic").src=pic[rand]
+    if (rand =6) {document.getElementById("charPic").style = "height:150px;padding:19px 12px 0 7px;"}
+    if (rand >6) {document.getElementById("charPic").style = "height:140px;padding:29px 17px 0 12px;"}
 
 	shatter("bottom")

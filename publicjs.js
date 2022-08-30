@@ -14,9 +14,10 @@ function wrong() {
 	}
 
 
-function next(isCourseEnd) {
+function next(boolean) {
 	var str = window.location.href;
-	if (isCourseEnd == true) {
+	if (boolean == true) {
+		alert('Course clear!')
 		var lastSlash=str.lastIndexOf("/");
 		var secondLastSlash=str.lastIndexOf("/",lastSlash-1);
 		n = Number(str.substring(secondLastSlash+1, lastSlash))
@@ -24,12 +25,13 @@ function next(isCourseEnd) {
 	}
 	else {
 		str = str.substring(str.lastIndexOf("z")+1, str.lastIndexOf("."));
-		location.href = './Qui' + (Number(str)+1)
+		location.href = './Quiz' + (Number(str)+1) + '.html'
 		}
 	}
 
 var string = '<button id="check" onmousedown="check()" disabled>CHECK<\/button><div id="wrong">Whoops. Let’s try again.<button id="retry" onclick="retry()">RETRY<\/button><\/div><div id="right">Well done!<button id="next" onclick="next(isCourseEnd)">NEXT<\/button><\/div>'
 document.write(string);
+isCourseEnd=false
 
 	function shatter(parentId) {
 		parent = document.getElementById(parentId)
