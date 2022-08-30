@@ -33,25 +33,25 @@ img {
 
 Which one means "mother"?
 <div id="picQuiz">
-	<button class="picCard" id="card1" onclick="card=1;c()" onblur="d()">
-  	    <img id="cardPic1" src="https://www.emojiall.com/images/svg/twitter/1f455.svg"/>
- 	    <div id="cardTxt1">Test</div>
+	<button class="picCard" id="card1" onclick="card=0;c()" onblur="d()">
+  	    <img id="cardPic1" src=""/>
+ 	    <div id="cardTxt1"></div>
 	</button>
-	<button class="picCard" id="card2" onclick="card=2;c()" onblur="d()">
-	    <img id="cardPic2" src="https://www.emojiall.com/images/svg/twitter/1f469-200d-1f37c.svg"/>
-	    <div id="cardTxt2">⅄ṡʎż</div>
+	<button class="picCard" id="card2" onclick="card=0;c()" onblur="d()">
+	    <img id="cardPic2" src=""/>
+	    <div id="cardTxt2">̇</div>
 	</button>
-	<button class="picCard" id="card3" onclick="card=3;c()" onblur="d()">
-	    <img id="cardPic3" src="https://www.emojiall.com/images/svg/twitter/1f455.svg"/>
-	    <div id="cardTxt3">Test</div>
+	<button class="picCard" id="card3" onclick="card=0;c()" onblur="d()">
+	    <img id="cardPic3" src=""/>
+	    <div id="cardTxt3"></div>
 	</button>
-	<button class="picCard" id="card4" onclick="card=4;c()" onblur="d()">
-	    <img id="cardPic4" src="https://www.emojiall.com/images/svg/twitter/1f455.svg"/>
-	    <div id="cardTxt4">Test</div>
+	<button class="picCard" id="card4" onclick="card=0;c()" onblur="d()">
+	    <img id="cardPic4" src=""/>
+	    <div id="cardTxt4"></div>
 	</button>
 	<button class="picCard" id="card5" onclick="card=5;c()" onblur="d()">
-	    <img id="cardPic5" src="https://www.emojiall.com/images/svg/twitter/1f455.svg"/>
-	    <div id="cardTxt5">Test</div>
+	    <img id="cardPic5" src="https://www.emojiall.com/images/svg/twitter/1f469-200d-1f37c.svg"/>
+	    <div id="cardTxt5">⅄ṡʎż</div>
 	</button>
 </div>
 
@@ -72,19 +72,14 @@ CHECK
 <script>
 	var card
 	function check() {
-		if (card == 2)  {right()}
+		if (card == 5)  {right()}
 		else {wrong()}
 		}
 </script>
+<script type="text/javascript" src="./picQuiz.js"></script>
 <script>
-		function data2array(rightWord) {
-			for (i = 1; i < 4; i++) {
-				temp = allWords[Math.round(Math.random()*allWords.length)]
-				if (temp.eng == rightWord) {i--; continue;}
-				document.getElementsByClass("cardPic"+i).src = temp.pic
-				document.getElementsByClass("cardTxt"+i).src = temp.txt
-				}
-			}
 		data2array("mother")
+		for (i = 1; i <= 10; i++) {
+		document.getElementById("picQuiz").appendChild(document.getElementById("card"+Math.ceil(Math.random()*5)));
+			}
 </script>
-<script type="text/javascript" src="./allWords.js"></script>
