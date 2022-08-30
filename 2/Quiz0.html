@@ -38,30 +38,30 @@
 	}
 </style>
 
-<audio id="audio" src="https://up.wiki.hancel.org/wikipedia/commons/a/ac/Voiceless_alveolar_sibilant.ogg">
+<audio id="audio" src="https://up.wiki.hancel.org/wikipedia/commons/4/4a/Voiceless_bilabial_affricate.ogg">
 </audio>
 Which sound does this letter make?
 <button id="letterCard" onclick="a.play()">
-	<div style="transform:matrix(-1,0,0,1,0,0); color:#fff;">p P</div>
+	V v
 	</button>
 <div id="letterQuiz">
 	<button class="soundCard" onclick="card=1;c()" onblur="d()">
-	    q
+	    t
 	</button>
 	<button class="soundCard" onclick="card=2;c()" onblur="d()">
-	    s
+	    k
 	</button>
 	<button class="soundCard" onclick="card=3;c()" onblur="d()">
-	    sh
+	    p
 	</button>
 </div>
 
-
+<script type="text/javascript" src="../publicjs.js"></script>
 <script>
 	var a=document.getElementById("audio");
 	var card
 	function check() {
-		if (card == 2) {right()}
+		if (card == 3) {right()}
 		else {wrong()}
 		}
 </script>

@@ -64,19 +64,6 @@ Fill the blank in the sentence:
 	</button>
 </div>
 
-<button id="check" onmousedown="check()" disabled>
-CHECK
-</button>
-
-<div id="wrong">
-	Whoops. Let’s try again.
-	<button id="retry" onclick="retry()">RETRY</button>	
-</div>
-<div id="right">
-	Well done!
-	<button id="next" onclick="alert('Course clear!');location.href='../3/tips.html'">NEXT</button>	
-</div>
-
 <script type="text/javascript" src="../publicjs.js"></script>
 <script>
 	var card
@@ -84,4 +71,5 @@ CHECK
 		if (card == 1) {right()}
 		else {wrong()}
 		}
+		isCourseEnd = true
 </script>

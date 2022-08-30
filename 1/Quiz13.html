@@ -1,10 +1,10 @@
 <title>Conlingo - The world's best way to learn Patchélogue</title><meta name="viewport" content="width=device-width, initial-scale=1"><link href="../style.css" rel="stylesheet" type="text/css"/>
 <style>
 	.matchCard, .matchCardR {
-		width: 200px;
+		width: 150px;
 		height: 50px;
-		padding: 12px;
-		margin: 12px;
+		padding: 4px;
+		margin: 10px 20px;
 		text-align: left;
 	}
 	.matchCardR:disabled {
@@ -17,7 +17,7 @@
 		min-width: 18px;
 		border: solid #e5e5e5 1px;
 		border-radius: 5px;
-		margin-right: 24px;
+		margin-right: 8px;
 		text-align: center;
 	}
 	.matchCard:hover {
@@ -87,64 +87,5 @@ Match the corresponding pair:
 </div>
 </div>
 
-<button id="check" onmousedown="check()" disabled>
-	CHECK
-</button>
 
-<div id="wrong">
-	Whoops. Let’s try again.
-	<button id="retry" onclick="retry()">RETRY</button>
-</div>
-<div id="right">
-	Well done!
-	<button id="next" onclick="location.href='./Quiz14.html'">NEXT</button>
-</div>
-
-<script type="text/javascript" src="../publicjs.js"></script>
-<script>
-	var cardL
-	function cr() { 
-	var x = document.getElementsByClassName("matchCardR");
-	var i;
-	for (i = 0; i < x.length; i++) {
-		x[i].disabled = false ;
-	}
-}
-	function dr() { 
-	var x = document.getElementsByClassName("matchCardR");
-	var i;
-	for (i = 0; i < x.length; i++) {
-		x[i].disabled = true ;
-	}
-}
-	function cardR(num) {
-		document.getElementById("cardR"+num+"Num").innerText = cardL
-		observe()
-	}
-	function observe() {
-		var empty=0
-		var i = 1
-		while (i <= 5) {
-			if (document.getElementById("cardR" + i + "Num").innerText == "-") {
-				empty = 1
-				break;
-			}
-			i++
-		}
-		if(empty == 1) {d()}
-		else {c()}
-	}
-    function check() {
-        var i = 1
-        var wrongs = 0
-        while (i<=5) {
-            if (document.getElementById("cardR" + i + "Num").innerText !== i + "") {
-                wrongs = 1
-                break;
-            }
-            i++
-        }
-        if (wrongs == 0) { right() }
-        else { wrong() }
-    }
-</script>
+<script type="text/javascript" src="../matchQuiz.js"></script>

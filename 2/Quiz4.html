@@ -25,49 +25,31 @@
 	color: #1899d6;
 	transform: translateY(4px);
 	}
-.picCard {
-	font-size: 250%;
+img {
+	height:80px
 	} 
 </style>
 
 
-Select the letter(s) for "mima":
+Which one means "cloth"?
 <div id="picQuiz">
-	<button class="picCard" onclick="card=1;c()" onblur="d()">
-		Yṡʌż
-	</button>
-	<button class="picCard" onclick="card=2;c()" onblur="d()">
-	    Yṡɑż
-	</button>
-	<button class="picCard" onclick="card=3;c()" onblur="d()">
-	    ⅄ṣʞż
-	</button>
-	<button class="picCard" onclick="card=4;c()" onblur="d()">
-		⅄iʎZ̄
-	</button>
-	<button class="picCard" onclick="card=5;c()" onblur="d()">
-	    ⅄ṡʎż
+	<button class="picCard" id="card1" onclick="card=0;c()" onblur="d()"></button>
+	<button class="picCard" id="card2" onclick="card=0;c()" onblur="d()"></button>
+	<button class="picCard" id="card3" onclick="card=0;c()" onblur="d()"></button>
+	<button class="picCard" id="card4" onclick="card=0;c()" onblur="d()"></button>
+	<button class="picCard" id="card5" onclick="card=5;c()" onblur="d()">
 	</button>
 </div>
 
-<button id="check" onmousedown="check()" disabled>
-CHECK
-</button>
 
-<div id="wrong">
-	Whoops. Let’s try again.
-	<button id="retry" onclick="retry()">RETRY</button>	
-</div>
-<div id="right">
-	Well done!
-	<button id="next" onclick="location.href='./Quiz5-before.html'">NEXT</button>	
-</div>
-
-<script type="text/javascript" src="../publicjs.js"></script>
 <script>
 	var card
 	function check() {
-		if (card == 4)  {right()}
+		if (card == 5)  {right()}
 		else {wrong()}
 		}
+</script>
+<script type="text/javascript" src="../picQuiz.js"></script>
+<script>
+		picQuiz("cloth")
 </script>

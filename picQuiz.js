@@ -45,7 +45,5 @@ var allWords = [
 					}
 				document.getElementById("card5").innerHTML = '<img src="' + allWords[answerNum].url + '"/><div>' + allWords[answerNum].txt + '</div>'
 				}
-	
-			for (i = 1; i <= 10; i++) {
-			document.getElementById("picQuiz").appendChild(document.getElementById("card"+Math.ceil(Math.random()*5)));
-				}
+
+shatter("picQuiz")
