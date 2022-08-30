@@ -27,3 +27,7 @@ var allWords = [
 				document.getElementById("cardTxt"+i).innerHTML = temp.txt
 				}
 			}
+
+		for (i = 1; i <= 10; i++) {
+		document.getElementById("picQuiz").appendChild(document.getElementById("card"+Math.ceil(Math.random()*5)));
+			}
