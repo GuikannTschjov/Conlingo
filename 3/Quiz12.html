@@ -33,25 +33,11 @@ img {
 
 Which one means "fire"?
 <div id="picQuiz">
-	<button class="picCard" onclick="card=1;c()" onblur="d()">
-	    <img src="https://www.emojiall.com/images/svg/twitter/1f4a7.svg"/>
-	    <div>⅄iq</div>
-	</button>
-	<button class="picCard" onclick="card=2;c()" onblur="d()">
-	    <img src="https://www.emojiall.com/images/svg/twitter/1f455.svg"/>
-	    <div>Īyṡ</div>
-	</button>
-	<button class="picCard" onclick="card=3;c()" onblur="d()">
-		<img src="https://www.emojiall.com/images/svg/twitter/1fab2.svg"/>
-		<div>Λżĸ</div>
-	</button>
-	<button class="picCard" onclick="card=4;c()" onblur="d()">
-	    <img src="https://www.emojiall.com/images/svg/twitter/1f525.svg"/>
-	    <div>Yṣ</div>
-	</button>
-	<button class="picCard" onclick="card=5;c()" onblur="d()">
-	    <img src="https://www.emojiall.com/images/svg/twitter/1f34e.svg"/>
-	    <div>ᑫżĸṣ</div>
+	<button class="picCard" id="card1" onclick="card=0;c()" onblur="d()"></button>
+	<button class="picCard" id="card2" onclick="card=0;c()" onblur="d()"></button>
+	<button class="picCard" id="card3" onclick="card=0;c()" onblur="d()"></button>
+	<button class="picCard" id="card4" onclick="card=0;c()" onblur="d()"></button>
+	<button class="picCard" id="card5" onclick="card=5;c()" onblur="d()">
 	</button>
 </div>
 
@@ -72,7 +58,11 @@ CHECK
 <script>
 	var card
 	function check() {
-		if (card == 4)  {right()}
+		if (card == 5)  {right()}
 		else {wrong()}
 		}
+</script>
+<script type="text/javascript" src="../picQuiz.js"></script>
+<script>
+		picQuiz("fire")
 </script>
