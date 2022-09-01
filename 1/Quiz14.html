@@ -4,7 +4,7 @@
 
 Match the corresponding pair:
 <div style="display: flex; justify-content: space-between">
-<div>
+<div id="leftCards">
 	<button class="matchCard" onclick="cardL=1;cr()" onblur="dr()">
 		<div class="cardNum">1</div>
         <span>am</span>
@@ -25,6 +25,29 @@ Match the corresponding pair:
 		<div class="cardNum">5</div>
 		<span>ambu</span>
 	</button>
+</div>
+<div id="rightCards">
+	<button class="matchCardR" onmousedown="cardR(3)" disabled>
+		<div class="cardNum" id="cardR3Num">-</div>
+		<span>żʌż</span>
+	</button>
+	<button class="matchCardR" onmousedown="cardR(5)" disabled>
+		<div class="cardNum" id="cardR5Num">-</div>
+		<span>żʎʌṡ</span>
+	</button>
+	<button class="matchCardR"onmousedown="cardR(1)" disabled>
+		<div class="cardNum" id="cardR1Num">-</div>
+		<span>żʎ</span>
+	</button>
+	<button class="matchCardR" onmousedown="cardR(2)" disabled>
+		<div class="cardNum" id="cardR2Num">-</div>
+		<span>ṡʎ</span>
+	</button>
+	<button class="matchCardR" onmousedown="cardR(4)" disabled>
+		<div class="cardNum" id="cardR4Num">-</div>
+		<span>ʌṡyż</span>
+	</button>
+</div>
 </div>
 <script type="text/javascript" src="../publicjs.js"></script>
 <script type="text/javascript" src="../matchQuiz.js"></script>

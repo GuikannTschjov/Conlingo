@@ -18,7 +18,13 @@ var allWords = [
 	{ eng:"textile", txt:"Λṡvż", url:"https://www.emojiall.com/images/240/facebook/1f3f3-fe0f.png" },
 	{ eng:"apple", txt:"ᑫżĸṣ", url:"https://www.emojiall.com/images/svg/twitter/1f34e.svg" },
 	{ eng:"paper", txt:"Vżviu", url:"https://www.emojiall.com/images/240/htc/1f4c3.png" },
-	{ eng:"fish", txt:"Kṣɑi", url:"https://www.emojiall.com/images/svg/twitter/1f41f.svg" }
+	{ eng:"fish", txt:"Kṣɑi", url:"https://www.emojiall.com/images/svg/twitter/1f41f.svg" },
+	{ eng:"girl", txt:"Πṣni", url:"https://www.emojiall.com/images/svg/twitter/1f467.svg" },
+	{ eng:"boy", txt:"7ṣɑż", url:"https://www.emojiall.com/images/svg/twitter/1f466.svg" },
+	{ eng:"man", txt:"Ьżʎ", url:"https://www.emojiall.com/images/svg/twitter/1f468.svg" },
+	{ eng:"woman", txt:"Ynṣı", url:"https://www.emojiall.com/images/svg/twitter/1f469.svg" },
+	{ eng:"person", txt:"⅄żb", url:"https://www.emojiall.com/images/svg/twitter/1f464.svg" },
+	{ eng:"people", txt:"ᖷṣıɑ", url:"https://www.emojiall.com/images/svg/twitter/1f465.svg" }
 	
 		]
 	
@@ -40,7 +46,7 @@ var allWords = [
 					document.getElementById("card"+i).innerHTML = '<img src="' + temp.url + '"/><div>' + temp.txt + '</div>'
 					}
 				var answerNum
-				for (i = 1; i <= allWords.length; i++) {
+				for (i = 0; i <= allWords.length; i++) {
 					if(allWords[i].eng == answerWord) {answerNum = i; break;}
 					}
 				document.getElementById("card5").innerHTML = '<img src="' + allWords[answerNum].url + '"/><div>' + allWords[answerNum].txt + '</div>'

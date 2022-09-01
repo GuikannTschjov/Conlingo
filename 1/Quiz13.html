@@ -1,10 +1,10 @@
 <title>Conlingo - The world's best way to learn Patchélogue</title><meta name="viewport" content="width=device-width, initial-scale=1"><link href="../style.css" rel="stylesheet" type="text/css"/>
-
+<style>.matchCard > span{font-size: 200%;}</style>
 
 
 Match the corresponding pair:
 <div style="display: flex; justify-content: space-between">
-<div>
+<div id="leftCards">
 	<button class="matchCard" onclick="cardL=1;cr()" onblur="dr()">
 		<div class="cardNum">1</div>
         <span>ż</span>
@@ -25,6 +25,29 @@ Match the corresponding pair:
 		<div class="cardNum">5</div>
 		<span>ʎ</span>
 	</button>
+</div>
+<div id="rightCards">
+</button>
+<button class="matchCardR"onmousedown="cardR(1)" disabled>
+	<div class="cardNum" id="cardR1Num">-</div>
+	<span>a</span>
+</button>
+<button class="matchCardR" onmousedown="cardR(4)" disabled>
+	<div class="cardNum" id="cardR4Num">-</div>
+	<span>F</span>
+</button>
+<button class="matchCardR" onmousedown="cardR(3)" disabled>
+	<div class="cardNum" id="cardR3Num">-</div>
+	<span>A</span>
+<button class="matchCardR" onmousedown="cardR(2)" disabled>
+	<div class="cardNum" id="cardR2Num">-</div>
+	<span>u</span>
+</button>
+<button class="matchCardR" onmousedown="cardR(5)" disabled>
+	<div class="cardNum" id="cardR5Num">-</div>
+	<span>m</span>
+</button>
+</div>
 </div>
 <script type="text/javascript" src="../publicjs.js"></script>
 <script type="text/javascript" src="../matchQuiz.js"></script>

@@ -139,10 +139,9 @@ button > img {
 	height:80px
 	} 
 .wordCard, .soundCard {
-	width:60px;
 	text-align: center;
 	}
-.soundCard {margin: 12px;}
+.soundCard {margin: 12px;width:60px;}
 .wordCard:hover, .soundCard:hover, .matchCard:hover, .picCard:hover {
 	background-color: #ddf4ff;
 	border: solid #84d8ff 2px;
