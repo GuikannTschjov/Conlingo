@@ -220,3 +220,7 @@ button > img {
 	font-size: 15px;
 	}
 #charPic{height:169px;}
+
+
+@font-face{font-family: 'Conlingo'; src:url("./Patchélogue Nunito.woff2") format('woff2');}
+#dialoguebox, #letterCard, .matchCard, .wordCard, .blankQuiz, .conlang {font-family:'Conlingo';}

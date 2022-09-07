@@ -2,53 +2,52 @@
 
 
 
-Write this Patchélogue sentence in English:
-<div id="sentenceQuiz">
-	<div id="charSentence" style="align-items: center;display: flex;border-bottom: 2px solid #e5e5e5;">
-		<img id="charPic" style="height:169px" src="">
-		<div style="z-index: 150;">
-		<div id=pointy></div><div id="dialogueBox">
-				ɒṡq <u class="blue" title="two">ɒṣq</u> Kṣɑiʎ,
-			</div>
-		</div>
-	</div>
-	<div id="top" style="
-		min-height: 60px;
-		border-bottom: 2px solid #e5e5e5;
-    	width: 100%;
-		align-items:flex-end;
-		padding-bottom:4px;
-		">
-	</div>
-	<div id="bottom">
-		<button class="wordCard" id="card2" onclick="move(2)">
-			two
-		</button>
-		<button class="wordCard" id="card4" onclick="move(4)">
-			paper
-		</button>
-		<button class="wordCard" id="card3" onclick="move(3)">
-			fishes
-		</button>
-		<button class="wordCard" id="card5" onclick="move(5)">
-			apples
-		</button>
-		<button class="wordCard" id="card1" onclick="move(1)">
-			your
-		</button>
-	</div>
+Match the corresponding pair:
+<div style="display: flex; justify-content: space-between">
+<div id="leftCards">
+	<button class="matchCard" onclick="cardL=1;cr()" onblur="dr()">
+		<div class="cardNum">1</div>
+        <span>dus</span>
+	</button>
+	<button class="matchCard" onclick="cardL=2;cr()" onblur="dr()">
+		<div class="cardNum">2</div>
+		<span>ta</span>
+	</button>
+	<button class="matchCard" onclick="cardL=3;cr()" onblur="dr()">
+		<div class="cardNum">3</div>
+		<span>Goti</span>
+	</button>
+	<button class="matchCard" onclick="cardL=4;cr()" onblur="dr()">
+		<div class="cardNum">4</div>
+		<span>tado</span>
+	</button>
+	<button class="matchCard" onclick="cardL=5;cr()" onblur="dr()">
+		<div class="cardNum">5</div>
+		<span>Ifus</span>
+	</button>
+</div>
+<div id="rightCards">
+	<button class="matchCardR" onmousedown="cardR(3)" disabled>
+		<div class="cardNum" id="cardR3Num">-</div>
+		<span>fish</span>
+	</button>
+	<button class="matchCardR" onmousedown="cardR(5)" disabled>
+		<div class="cardNum" id="cardR5Num">-</div>
+		<span>clothes</span>
+	</button>
+	<button class="matchCardR"onmousedown="cardR(1)" disabled>
+		<div class="cardNum" id="cardR1Num">-</div>
+		<span>your</span>
+	</button>
+	<button class="matchCardR" onmousedown="cardR(2)" disabled>
+		<div class="cardNum" id="cardR2Num">-</div>
+		<span>he or she</span>
+	</button>
+	<button class="matchCardR" onmousedown="cardR(4)" disabled>
+		<div class="cardNum" id="cardR4Num">-</div>
+		<span>many</span>
+	</button>
+</div>
 </div>
 <script type="text/javascript" src="../publicjs.js"></script>
-<script type="text/javascript" src="../sentenceQuizJS.js"></script>
-<script type="text/javascript">
-	wordCardNum=3
-</script>
-
-	
-
-
-	
-	
-
-
-	
+<script type="text/javascript" src="../matchQuiz.js"></script>
