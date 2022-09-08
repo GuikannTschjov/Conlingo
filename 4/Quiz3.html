@@ -2,13 +2,14 @@
 
 
 
-Which one means "me"?
+Which one means "milk"?
 <div id="picQuiz">
 	<button class="picCard" id="card1" onclick="card=0;c()" onblur="d()"></button>
 	<button class="picCard" id="card2" onclick="card=0;c()" onblur="d()"></button>
 	<button class="picCard" id="card3" onclick="card=0;c()" onblur="d()"></button>
 	<button class="picCard" id="card4" onclick="card=0;c()" onblur="d()"></button>
-	<button class="picCard" id="card5" onclick="card=5;c()" onblur="d()"></button>
+	<button class="picCard" id="card5" onclick="card=5;c()" onblur="d()">
+	</button>
 </div>
 <script type="text/javascript" src="../publicjs.js"></script>
 <script>
@@ -17,4 +18,8 @@ Which one means "me"?
 		if (card == 5)  {right()}
 		else {wrong()}
 		}
+</script>
+<script type="text/javascript" src="../picQuiz.js"></script>
+<script>
+		picQuiz("milk")
 </script>

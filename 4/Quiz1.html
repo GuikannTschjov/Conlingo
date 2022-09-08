@@ -1,20 +1,29 @@
 <title>Conlingo - The world's best way to learn Patchélogue</title><meta name="viewport" content="width=device-width, initial-scale=1"><link href="../style.css" rel="stylesheet" type="text/css"/>
 
 
-
-Which one means "me"?
-<div id="picQuiz">
-	<button class="picCard" id="card1" onclick="card=0;c()" onblur="d()"></button>
-	<button class="picCard" id="card2" onclick="card=0;c()" onblur="d()"></button>
-	<button class="picCard" id="card3" onclick="card=0;c()" onblur="d()"></button>
-	<button class="picCard" id="card4" onclick="card=0;c()" onblur="d()"></button>
-	<button class="picCard" id="card5" onclick="card=5;c()" onblur="d()"></button>
+<audio id="audio" src="https://up.wiki.hancel.org/wikipedia/commons/f/f2/Voiced_labio-velar_approximant.ogg">
+</audio>
+Which sound does this letter make?
+<button id="letterCard" onclick="a.play()">
+	W w
+	</button>
+<div id="letterQuiz">
+	<button class="soundCard" onclick="card=1;c()" onblur="d()">
+	    w
+	</button>
+	<button class="soundCard" onclick="card=2;c()" onblur="d()">
+	    u
+	</button>
+	<button class="soundCard" onclick="card=3;c()" onblur="d()">
+	    o
+	</button>
 </div>
 <script type="text/javascript" src="../publicjs.js"></script>
 <script>
+	var a=document.getElementById("audio");
 	var card
 	function check() {
-		if (card == 5)  {right()}
+		if (card == 1) {right()}
 		else {wrong()}
 		}
 </script>

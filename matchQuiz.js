@@ -44,5 +44,4 @@ function check() {
     else { wrong() }
 }
 
-shatter("leftCards")
 shatter("rightCards")

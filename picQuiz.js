@@ -1,6 +1,7 @@
 var allWords = [
 	{ eng:"father", txt:"Fuba", url:"https://www.emojiall.com/images/svg/twitter/1f468-200d-1f37c.svg" }, 
-	{ eng:"mother", txt:"Muma", url:"https://www.emojiall.com/images/svg/twitter/1f469-200d-1f37c.svg" }, 
+	{ eng:"mother", txt:"Muma", url:"https://www.emojiall.com/images/svg/twitter/1f469-200d-1f37c.svg" },
+	{ eng:"smoke", txt:"Fum", url:"https://www.emojiall.com/images/svg/twitter/1f32b.svg" }, 
 	{ eng:"cat", txt:"Sabal", url:"https://www.emojiall.com/images/svg/twitter/1f408.svg" },
 	{ eng:"mouse", txt:"Miki", url:"https://www.emojiall.com/images/svg/twitter/1f401.svg" },
 	{ eng:"cloth", txt:"Ifu", url:"https://www.emojiall.com/images/svg/twitter/1f455.svg" },
@@ -25,7 +26,7 @@ var allWords = [
 	{ eng:"woman", txt:"Flaw", url:"https://www.emojiall.com/images/svg/twitter/1f469.svg" },
 	{ eng:"person", txt:"Man", url:"https://www.emojiall.com/images/svg/twitter/1f464.svg" },
 	{ eng:"people", txt:"Hoyt", url:"https://www.emojiall.com/images/svg/twitter/1f465.svg" },
-	{ eng:"milk", txt:"Niuk", url:"https://d2pur3iezf4d1j.cloudfront.net/images/645fa42dcea02c7e2970a1285e321562" }
+	{ eng:"milk", txt:"Nyuk", url:"https://d2pur3iezf4d1j.cloudfront.net/images/645fa42dcea02c7e2970a1285e321562" }
 	
 		]
 	

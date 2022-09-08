@@ -223,4 +223,4 @@ button > img {
 
 
 @font-face{font-family: 'Conlingo'; src:url("./Patchélogue Nunito.woff2") format('woff2');}
-#dialoguebox, #letterCard, .matchCard, #blankQuiz > .wordCard, .picCard, .picCard > div, .blankQuiz, .conlang {font-family:'Conlingo';}
+#dialoguebox, #letterCard, #leftCards > .matchCard, #blankQuiz > .wordCard, .picCard, .picCard > div, .blankQuiz, .conlang {font-family:'Conlingo';}
