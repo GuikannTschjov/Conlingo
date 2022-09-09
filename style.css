@@ -135,21 +135,27 @@ button:active {
 	flex-wrap:wrap;
 	justify-content: center;
 	}
+#sceneQuiz{
+		display:flex;
+		flex-direction: row;
+		flex-wrap:nowrap;
+		justify-content: center;
+		}
 button > img {
 	height:80px
 	} 
-.wordCard, .soundCard {
+.wordCard, .soundCard, .sentenceCard {
 	text-align: center;
 	}
 .soundCard {margin: 12px;width:60px;}
-.wordCard:hover, .soundCard:hover, .matchCard:hover, .picCard:hover {
+.wordCard:hover, .soundCard:hover, .matchCard:hover, .picCard:hover, .sentenceCard:hover  {
 	background-color: #ddf4ff;
 	border: solid #84d8ff 2px;
       box-shadow: 0 4px #84d8ff;
 	color: #1899d6;
 	}
-.wordCard:active, .soundCard:active, .matchCard:active, .picCard:active, #letterCard:active {box-shadow: 0 0;}
-.wordCard:focus, .soundCard:focus, .matchCard:focus, .picCard:focus {
+.wordCard:active, .soundCard:active, .matchCard:active, .picCard:active, #letterCard:active, .sentenceCard:hover  {box-shadow: 0 0;}
+.wordCard:focus, .soundCard:focus, .matchCard:focus, .picCard:focus, .sentenceCard:focus  {
 	background-color: #ddf4ff;
 	border: solid #84d8ff 2px;
       box-shadow: 0 0px #84d8ff;
@@ -223,4 +229,10 @@ button > img {
 
 
 @font-face{font-family: 'Conlingo'; src:url("./Patchélogue Nunito.woff2") format('woff2');}
-#dialoguebox, #letterCard, #leftCards > .matchCard, #blankQuiz > .wordCard, .picCard, .picCard > div, .blankQuiz, .conlang {font-family:'Conlingo';}
+#dialoguebox, #letterCard, #leftCards > .matchCard, #blankQuiz > .wordCard, .picCard, .picCard > div, .blankQuiz, .sentenceCard, .conlang {
+	font-family:'Conlingo';
+	font-variant-ligatures: common-ligatures;
+	-moz-font-feature-settings: "liga", "fina", "lfin", "punc";
+	-webkit-font-feature-settings: "liga", "fina", "lfin", "punc";
+	font-feature-settings: "liga", "fina", "lfin", "punc";
+	}

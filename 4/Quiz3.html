@@ -2,24 +2,50 @@
 
 
 
-Which one means "milk"?
-<div id="picQuiz">
-	<button class="picCard" id="card1" onclick="card=0;c()" onblur="d()"></button>
-	<button class="picCard" id="card2" onclick="card=0;c()" onblur="d()"></button>
-	<button class="picCard" id="card3" onclick="card=0;c()" onblur="d()"></button>
-	<button class="picCard" id="card4" onclick="card=0;c()" onblur="d()"></button>
-	<button class="picCard" id="card5" onclick="card=5;c()" onblur="d()">
-	</button>
+Write this Patchélogue sentence in English:
+<div id="sentenceQuiz">
+	<div id="charSentence" style="align-items: center;display: flex;border-bottom: 2px solid #e5e5e5;">
+		<img id="charPic" style="height:169px" src="">
+		<div style="z-index: 150;">
+		<div id=pointy></div><div id="dialogueBox">
+				Wo et <u class="blue" title="my">wos</u> Name`.
+			</div>
+		</div>
+	</div>
+	<div id="top">
+	</div>
+	<div id="bottom">
+		<button class="wordCard" id="card1" onclick="move(1)">
+			I
+		</button>
+		<button class="wordCard" id="card2" onclick="move(2)">
+			and
+		</button>
+		<button class="wordCard" id="card3" onclick="move(3)">
+			my
+		</button>
+		<button class="wordCard" id="card4" onclick="move(4)">
+			name
+		</button>
+		<button class="wordCard" id="card5" onclick="move(5)">
+			milk
+		</button>
+		<button class="wordCard" id="card5" onclick="move(6)">
+			the
+		</button>
+	</div>
 </div>
 <script type="text/javascript" src="../publicjs.js"></script>
-<script>
-	var card
-	function check() {
-		if (card == 5)  {right()}
-		else {wrong()}
-		}
+<script type="text/javascript" src="../sentenceQuizJS.js"></script>
+<script type="text/javascript">
+	wordCardNum = 4
 </script>
-<script type="text/javascript" src="../picQuiz.js"></script>
-<script>
-		picQuiz("milk")
-</script>
+
+	
+
+
+	
+	
+
+
+	
