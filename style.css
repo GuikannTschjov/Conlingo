@@ -104,6 +104,7 @@ button:active {
 	.blue {
 		color:#1cb0f6;
 		font-weight: bold;
+		font-family: inherit;
 	}
 
 	table {
@@ -232,7 +233,7 @@ button > img {
 #dialoguebox, #letterCard, #leftCards > .matchCard, #blankQuiz > .wordCard, .picCard, .picCard > div, .blankQuiz, .sentenceCard, .conlang {
 	font-family:'Conlingo';
 	font-variant-ligatures: common-ligatures;
-	-moz-font-feature-settings: "liga", "fina", "lfin", "punc";
-	-webkit-font-feature-settings: "liga", "fina", "lfin", "punc";
-	font-feature-settings: "liga", "fina", "lfin", "punc";
+	-moz-font-feature-settings: "liga", "fina", "punc";
+	-webkit-font-feature-settings: "liga", "fina", "punc";
+	font-feature-settings: "liga", "fina", "punc";
 	}
