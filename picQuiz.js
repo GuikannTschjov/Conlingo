@@ -2,7 +2,7 @@ var allWords = [
 	{ eng:"father", txt:"Fuba", url:"https://www.emojiall.com/images/svg/twitter/1f468-200d-1f37c.svg" }, 
 	{ eng:"mother", txt:"Muma", url:"https://www.emojiall.com/images/svg/twitter/1f469-200d-1f37c.svg" },
 	{ eng:"smoke", txt:"Fum", url:"https://www.emojiall.com/images/svg/twitter/1f32b.svg" }, 
-	{ eng:"cat", txt:"Sabal", url:"https://www.emojiall.com/images/svg/twitter/1f408.svg" },
+	{ eng:"cat", txt:"Sabalh", url:"https://www.emojiall.com/images/svg/twitter/1f408.svg" },
 	{ eng:"mouse", txt:"Miki", url:"https://www.emojiall.com/images/svg/twitter/1f401.svg" },
 	{ eng:"cloth", txt:"Ifu", url:"https://www.emojiall.com/images/svg/twitter/1f455.svg" },
 	{ eng:"flower", txt:"Flana", url:"https://www.emojiall.com/images/svg/twitter/1f33c.svg" },
@@ -12,13 +12,13 @@ var allWords = [
 	{ eng:"you", txt:"Du", url:"https://www.emojiall.com/images/svg/twitter/1faf5.svg" },
 	{ eng:"me", txt:"Wo", url:"https://www.emojiall.com/images/svg/twitter/1f9cf.svg" },
 	{ eng:"name", txt:"Name`", url:"https://www.emojiall.com/images/svg/emojitwo/1f4db.svg" },
-	{ eng:"love", txt:"aysdel", url:"https://www.emojiall.com/images/svg/twitter/2764.svg" },
+	{ eng:"love", txt:"aysde`lh", url:"https://www.emojiall.com/images/svg/twitter/2764.svg" },
 	{ eng:"cake", txt:"Keyki", url:"https://www.emojiall.com/images/svg/twitter/1f370.svg" },
 	{ eng:"book", txt:"Kitab", url:"https://www.emojiall.com/images/svg/twitter/1f4d6.svg" },
 	{ eng:"house", txt:"Has", url:"https://www.emojiall.com/images/svg/twitter/1f3e0.svg" },
 	{ eng:"textile", txt:"Bupa", url:"https://www.emojiall.com/images/240/facebook/1f3f3-fe0f.png" },
 	{ eng:"apple", txt:"Sago", url:"https://www.emojiall.com/images/svg/twitter/1f34e.svg" },
-	{ eng:"paper", txt:"Papil", url:"https://www.emojiall.com/images/240/htc/1f4c3.png" },
+	{ eng:"paper", txt:"Papilh", url:"https://www.emojiall.com/images/240/htc/1f4c3.png" },
 	{ eng:"fish", txt:"Goti", url:"https://www.emojiall.com/images/svg/twitter/1f41f.svg" },
 	{ eng:"girl", txt:"Loli", url:"https://www.emojiall.com/images/svg/twitter/1f467.svg" },
 	{ eng:"boy", txt:"Shota", url:"https://www.emojiall.com/images/svg/twitter/1f466.svg" },
@@ -27,7 +27,12 @@ var allWords = [
 	{ eng:"person", txt:"Man", url:"https://www.emojiall.com/images/svg/twitter/1f464.svg" },
 	{ eng:"people", txt:"Hoyt", url:"https://www.emojiall.com/images/svg/twitter/1f465.svg" },
 	{ eng:"milk", txt:"Nyuk", url:"https://d2pur3iezf4d1j.cloudfront.net/images/645fa42dcea02c7e2970a1285e321562" },
-	{ eng:"dog", txt:"Snubi", url:"https://www.emojiall.com/images/svg/emojitwo/1f415.svg" }
+	{ eng:"dog", txt:"Snubi", url:"https://www.emojiall.com/images/svg/twitter/1f415.svg" },
+	{ eng:"mouse", txt:"Miki", url:"https://www.emojiall.com/images/svg/twitter/1f401.svg" },
+	{ eng:"pig", txt:"Peki", url:"https://www.emojiall.com/images/svg/twitter/1f416.svg" },
+	{ eng:"world", txt:"Skay", url:"https://www.emojiall.com/images/svg/twitter/1f5fa.svg" },
+	{ eng:"eat", txt:"tabe`lh", url:"https://www.emojiall.com/images/svg/twitter/1f37d.svg" },
+	{ eng:"drink", txt:"nomu", url:"https://www.emojiall.com/images/svg/twitter/1f6b0.svg" }
 	
 		]
 	
