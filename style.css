@@ -135,7 +135,10 @@ button:active {
 	tr:last-child *:first-child {border-radius: 0 0 0 16px;}
 	tr:last-child *:last-child {border-radius: 0 0 16px 0;}
 
-
+	.bigPic{
+		border-radius: 24px; border:solid 2px #afafaf; display:block; margin:auto;
+		width:auto;
+		height:230px;}
 
 #blankQuiz, #letterQuiz, #picQuiz, #top, #bottom{
 	display:flex;
