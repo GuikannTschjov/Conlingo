@@ -242,7 +242,7 @@ button > img {
 
 
 @font-face{font-family: 'Conlingo'; src:url("./Patchélogue Nunito.woff2") format('woff2');}
-#dialoguebox, #letterCard, #leftCards > .matchCard, #blankQuiz > .wordCard, .picCard, .picCard > div, .blankQuiz, .sentenceCard, .conlang {
+#dialoguebox, #letterCard, #leftCards > .matchCard > span, #blankQuiz > .wordCard, .picCard, .picCard > div, .blankQuiz, .sentenceCard, .conlang {
 	font-family:'Conlingo';
 	font-variant-ligatures: common-ligatures;
 	-moz-font-feature-settings: "liga", "lfin", "punc";
